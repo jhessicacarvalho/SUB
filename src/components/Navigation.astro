@@ -1,0 +1,118 @@
+<nav class="navigation">
+  <div class="logo">
+    <a href="/">
+      <img src="/logo.svg" alt="logo" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/forlob">Vores forløb</a></li>
+    <li><a href="/modos">Mød os</a></li>
+    <li><a href="/deltager">Deltagerne</a></li>
+    <li><a href="/ansog">Ansøg</a></li>
+  </ul>
+  <div class="burger-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+<style>
+  @font-face {
+    font-family: Amiko-Regular;
+    src: url(/fonts/Amiko-Regular);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: #fffffe;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    height: 54px;
+    width: auto;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-left: 65px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-family: "Amiko-Regular", sans-serif;
+    color: black;
+    font-size: 17px;
+  }
+
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  .line1 {
+    background-color: #f499b8;
+  }
+
+  .line2 {
+    background-color: black;
+  }
+
+  .line3 {
+    background-color: #3c441b;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      top: 60px;
+      background-color: #fffffe;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links li {
+      margin: 50px 0;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  }
+
+  .nav-active {
+    display: flex;
+  }
+</style>
+
+<script>
+  const burgerMenu = document.querySelector(".burger-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  burgerMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-active");
+    burgerMenu.classList.toggle("toggle");
+  });
+</script>
