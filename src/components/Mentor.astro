@@ -1,0 +1,24 @@
+---
+import SingleMentor from "../components/SingleMentor.astro";
+const data = await fetch(
+  "https://jlkmbrskscwlmrhlokrz.supabase.co/rest/v1/mentor",
+  {
+    method: "GET",
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impsa21icnNrc2N3bG1yaGxva3J6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU5NDQwNjcsImV4cCI6MjAzMTUyMDA2N30.3C6XLy5bosqjRJzmzxYAOiyf_OTVnb2ARwM08ipaGXs",
+    },
+  }
+).then((res) => res.json());
+---
+
+<section>
+  <h1>HEJ</h1>
+  <div>
+    {
+      data.map((mentor) => {
+        return <SingleMentor data={mentor} />;
+      })
+    }
+  </div>
+</section>
