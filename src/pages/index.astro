@@ -1,6 +1,95 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
+import Samarbejds from "../components/Samarbejds.astro";
 ---
 
-<MainLayout />
+<MainLayout>
+    <img class="fosidebillede" src="/forsidebillede.png" alt="forside billede" />
+    <div class="forsidebillede_container">
+    <p>KICKSTART DIN KARRIERE</p>
+    <p>MED VORES TALENTFORLØB</p>
+    KNAP
+</div>
+    <div class="logo_container">
+    <img class="logo" src="/logo.svg" alt="logo" /></div>
+    <p class="forside_p">SUBURBANGIRLS arbejder målrettet på at ændre kønsbalancen i musikbranchen. Vi tilbyder et trygt og støttende fællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere.</p>
+    <img src="/forside2.jpg" alt="billede af sub" />
+    <img src="/promovideo.mov" alt="reklame video" />
+    <img src="/lyserødbag.jpg" alt="lyserød baggrund" />
+    <div class="forside_box_container">
+    <div class="hvid_box">
+        <p>ANSØGNINGSFRIST<br>30. NOVEMBER 2023</p
+        <button class="button_ansog">Ansøg nu</button>
+</div>
+<div class="gron_box">
+    <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
+    <button class="button_link">LINK</button>
+</div>
+</div>
+</MainLayout>
+
+<style>
+.fosidebillede{
+
+}
+.forsidebillede_container{
+display: flex;
+justify-content: left;
+}
+.logo_container{
+display: flex;
+justify-content: center;
+margin-top: 1vw;
+}
+
+.forside_p{
+margin-left: 10vw;
+margin-right: 10vw;
+margin-top: 3vw;
+margin-bottom: 8vw;
+}
+
+.hvid_box {
+    background-color: #ffffff; /* Hvid baggrund */
+    padding: 20px; /* Indvendig margen */
+    border-radius: 8px; /* Afrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+    max-width: 300px; /* Maksimal bredde */
+    text-align: center; /* Centreret tekst */
+}
+.button_ansog {
+    background-color:transparent; /* Ingen fyld */
+    border: 2px solid #000; /* Sort kant */
+    color: #000; /* Sort tekst */
+    padding: 10px 20px; /* Indvendig margen for at gøre knappen større */
+    font-size: 16px; /* Tekststørrelse */
+    cursor: pointer; /* Ændrer cursoren til en hånd */
+    border-radius: 4px; /* Lidt afrundede hjørner */
+    transition: background-color 0.3s, color 0.3s; /* Glat overgang */
+    border: 1px #000;
+}
+
+.button_ansog:hover {
+    background-color: #000; /* Sort baggrund ved hover */
+    color: #fff; /* Hvid tekst ved hover */
+}
+
+.button_link{
+    SKAL LAVES TIL COMPONENT
+}
+
+.gron_box {
+    background-color: #ffffff; /* Hvid baggrund */
+    padding: 20px; /* Indvendig margen */
+    border-radius: 8px; /* Afrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+    max-width: 300px; /* Maksimal bredde */
+    text-align: center; /* Centreret tekst */
+}
+.forside_box_container{
+display: flex;
+flex-direction: row;
+}
+
+</style>
