@@ -2,6 +2,7 @@
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
 import Mentor from "../components/Mentor.astro";
+import Samarbejds from "../components/Samarbejds.astro";
 ---
 
 <MainLayout>
@@ -40,19 +41,7 @@ import Mentor from "../components/Mentor.astro";
   <div class="knap">
     <p>TV2 KOSMOPOL FULGTE I 2022 SUBURBANGIRLS</p>
   </div>
-  <h1>SAMARBEJDSPARTNERE</h1>
-  <div class="img-grid">
-    <img class="image" src="/samarbejdslogo/koda.jpg" alt="Koda-logo" />
-    <img class="image" src="/samarbejdslogo/kmp.jpg" alt="Kmp-logo" />
-    <img class="image" src="/samarbejdslogo/dsa.jpg" alt="Dsa-logo" />
-    <img class="image" src="/samarbejdslogo/daf.jpg" alt="Daf-logo" />
-    <img
-      class="image"
-      src="/samarbejdslogo/bandakademiet.jpg"
-      alt="Band Akademiet-logo"
-    />
-    <img class="image" src="/samarbejdslogo/dpa.jpg" alt="DPA-logo" />
-  </div>
+  <Samarbejds />
 </MainLayout>
 
 <style>
@@ -92,16 +81,5 @@ import Mentor from "../components/Mentor.astro";
   }
   p {
     font-family: Amiko-Regular;
-  }
-  .img-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2px;
-  }
-
-  .image {
-    width: 70%;
-    height: auto;
-    border-radius: 5px;
   }
 </style>
