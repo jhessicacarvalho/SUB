@@ -5,17 +5,30 @@ import Samarbejds from "../components/Samarbejds.astro";
 ---
 
 <MainLayout>
-    <img class="fosidebillede" src="/forsidebillede.png" alt="forside billede" />
-    <div class="forsidebillede_container">
-    <p>KICKSTART DIN KARRIERE</p>
+<div class="forsidebillede_container">
+    <div class="billede-wrapper">
+        <img src="/forsidebillede.png" alt="forside billede" class="forsidebillede">
+        <div class="tekst-overlay">
+         <p>KICKSTART DIN KARRIERE</p>
     <p>MED VORES TALENTFORLØB</p>
-    KNAP
+    <button>Ansøg nu</button>   
+        </div>
+    </div>
 </div>
+
+
     <div class="logo_container">
     <img class="logo" src="/logo.svg" alt="logo" /></div>
     <p class="forside_p">SUBURBANGIRLS arbejder målrettet på at ændre kønsbalancen i musikbranchen. Vi tilbyder et trygt og støttende fællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere.</p>
     <img src="/forside2.jpg" alt="billede af sub" />
-    <img src="/promovideo.mov" alt="reklame video" />
+
+    <video controls class="video">
+        <source src="/promovideo.mp4" type="video/mp4">
+    </video>
+
+
+
+
     <img src="/lyserødbag.jpg" alt="lyserød baggrund" />
     <div class="forside_box_container">
     <div class="hvid_box">
@@ -34,9 +47,42 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 }
 .forsidebillede_container{
-display: flex;
-justify-content: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
+
+/* Billedet */
+.billede-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.forsidebillede {
+    width: 100%;
+    height: auto;
+    display: block; */
+}
+
+/* Tekst overlay */
+.tekst-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Venstrejuster elementer */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-right: -90vh;
+}
+
+
+
+
 .logo_container{
 display: flex;
 justify-content: center;
@@ -50,13 +96,26 @@ margin-top: 3vw;
 margin-bottom: 8vw;
 }
 
+
+.video {
+    width: 100%; /* Gør videoen responsiv og fylder sin container */
+    max-width: 800px; /* Sæt en maksimal bredde for videoen */
+    height: auto; /* Behold den originale højde-bredde-forhold */
+}
+
+
+
+
+
+
 .hvid_box {
-    background-color: #ffffff; /* Hvid baggrund */
-    padding: 20px; /* Indvendig margen */
-    border-radius: 8px; /* Afrundede hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
-    max-width: 300px; /* Maksimal bredde */
-    text-align: center; /* Centreret tekst */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 32rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .button_ansog {
     background-color:transparent; /* Ingen fyld */
@@ -80,12 +139,13 @@ margin-bottom: 8vw;
 }
 
 .gron_box {
-    background-color: #ffffff; /* Hvid baggrund */
-    padding: 20px; /* Indvendig margen */
-    border-radius: 8px; /* Afrundede hjørner */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
-    max-width: 300px; /* Maksimal bredde */
-    text-align: center; /* Centreret tekst */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 32rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .forside_box_container{
 display: flex;
