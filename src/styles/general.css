@@ -8,3 +8,41 @@ body {
   width: 100%;
   background-color: #d9d9d9;
 }
+
+:root {
+  --grey: #d9d9d9;
+  --pink: #f499b8;
+  --green: #575b47;
+}
+
+@font-face {
+  font-family: Amiko-Regular;
+  src: url(../fonts/Amiko-Regular.ttf);
+}
+
+@font-face {
+  font-family: Amiko-Bold;
+  src: url(../fonts/Amiko-Bold.ttf);
+}
+
+@font-face {
+  font-family: mostWasted;
+  src: url(../fonts/mostwasted.woff2);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: mostWasted, serif;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-family: Amiko-Bold;
+    font-size: 2em;
+  }
+
+  p {
+    font-family: Amiko-Regular;
+    font-size: 1.5em;
+  }
+}
