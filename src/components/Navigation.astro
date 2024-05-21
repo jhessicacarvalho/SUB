@@ -1,7 +1,7 @@
 <header class="navigation">
   <div class="logo">
     <a href="/">
-      <img src="/logo.svg" alt="logo" />
+      <img src="/svger/logo.svg" alt="logo" />
     </a>
   </div>
   <nav>
@@ -27,15 +27,18 @@
     font-style: normal;
     font-display: swap;
   }
+
   .navigation {
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
     background-color: #fffffe;
     color: white;
-    padding: 2rem;
-    width: 100%;
+    padding: 0.7em;
+    overflow: hidden;    
   }
 
   .logo img {
