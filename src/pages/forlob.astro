@@ -2,62 +2,58 @@
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
 ---
-
 <MainLayout>
   <img class="topIMG" src="../forlob.webp" alt="To personer i et studio">
- <div class="margin">
-  <h1>Vores forløb</h1>
-  <p>SUBURBANGIRLS er for dig der elsker hiphop, RnB og lignende genrer, dig der savner et sted til at realisere dine drømme og ideer og dig der ved du skal ud i verden.</p>
-</div>
+  <div class="margin">
+    <h1>Vores forløb</h1>
+    <p>SUBURBANGIRLS er for dig der elsker hiphop, RnB og lignende genrer, dig der savner et sted til at realisere dine drømme og ideer og dig der ved du skal ud i verden.</p>
+  </div>
   <div class="post-it-green">
     <img class="tape tape1" src="../svger/tape.svg" alt="tape">
     <img class="tape tape2" src="../svger/tape.svg" alt="tape">
     <h2>HVORFOR?</h2>
     <ol>
       <li>Få viden og netværk inden for musikbranchen</li>
-      <blockquote></blockquote>
       <li>Bliv støttet og anerkendt i din kreative rejse</li>
       <li>Få udviklet dine musikalske evner</li>
       <li>Vær med til at bryde kønsbalancen i musikbranchen</li>
     </ol>
   </div>
 
-   <div class="margin">
-  <p>Det et eksklusivt og forpligtende talent- og karriereforløb for kvinder der ønsker at træde ind i musikbranchen. Du vil møde erfarne kunstnere, sangskrivere og producere, som du vil kunne spare med. Du vil derudover blive klogere på musikbranchens virke. Vores karriererådgivning guider dig til at skabe din egen succes i musikverdenen. </p>
-
-  <p>Du bliver en del af et trygt og styrkende fællesskab, hvor du får mulighed for at udvikle dine færdigheder. Det vigtigste kriterie for en plads på forløbet er dit talent, din motivation og dine ambitioner - erfaring er ikke et krav, men heller ingen hindring.</p>
+  <div class="margin">
+    <p>Det et eksklusivt og forpligtende talent- og karriereforløb for kvinder der ønsker at træde ind i musikbranchen. Du vil møde erfarne kunstnere, sangskrivere og producere, som du vil kunne spare med. Du vil derudover blive klogere på musikbranchens virke. Vores karriererådgivning guider dig til at skabe din egen succes i musikverdenen. </p>
+    <p>Du bliver en del af et trygt og styrkende fællesskab, hvor du får mulighed for at udvikle dine færdigheder. Det vigtigste kriterie for en plads på forløbet er dit talent, din motivation og dine ambitioner - erfaring er ikke et krav, men heller ingen hindring.</p>
   </div>
 
-  <!-- <div class="pink-background">  
-    <img src="../pink-background.webp" alt="pink papir der er revet over">
-    <div class="inside">
-    <h2>FORLØBETS INDHOLD</h2>
+  <div class="pink-container">
+    <img class="pink-img" src="../pink-background.webp" alt="pink papir der er revet over" >
+    <div>
+      <h2>FORLØBETS INDHOLD</h2>
     </div>
-    <div class="white-box1">
+    <div class="white-box white-box1">
       <img class="tape tape3" src="../svger/tape.svg" alt="tape">
       <img class="tape tape4" src="../svger/tape.svg" alt="tape">
       <p>KVINDE-<br>FÆLLESSKAB</p>
-    </div>  
-    <div class="white-box2">
+    </div>
+    <div class="white-box white-box2">
       <img class="tape tape5" src="../svger/tape.svg" alt="tape">
       <img class="tape tape6" src="../svger/tape.svg" alt="tape">
       <p>WORKSHOP<br>& CAMPS</p>
-    </div>  
-    <div class="white-box3">
+    </div>
+    <div class="white-box white-box3">
       <img class="tape tape7" src="../svger/tape.svg" alt="tape">
       <img class="tape tape8" src="../svger/tape.svg" alt="tape">
       <p>INDSIGT I<br>MUSIKBRANCHEN</p>
-    </div>  
-    <div class="white-box4">
+    </div>
+    <div class="white-box white-box4">
       <img class="tape tape9" src="../svger/tape.svg" alt="tape">
       <img class="tape tape10" src="../svger/tape.svg" alt="tape">
       <p>RÅD &<br>VEJLEDNING</p>
-    </div>  
-  </div> -->
+    </div>
+  </div>
 
-
-  <div class="container" >
-  <div class="green-box">
+  <!-- <div class="container">
+    <div class="green-box">
       <h2>VIL DU VÆRE MED?</h2>
       <p>Du skal være:</p>
       <ol>
@@ -71,242 +67,166 @@ import "../styles/general.css";
         <li>Komponere (skrive dine egne <br> tekster og melodier)</li>
         <li>Lave beats og/eller producere</li>
       </ul>
-  </div>
-  <div>
-  <img class="studioIMG" src="../forlob-indspil.webp" alt="Kvinde der indspiller musik i et studio">
-  </div>
-  </div>
-
-
+    </div>
+    <div>
+      <img class="studioIMG" src="../forlob-indspil.webp" alt="Kvinde der indspiller musik i et studio">
+    </div>
+  </div> -->
 </MainLayout>
 
 <style>
-
-  .margin{
-     margin-right: 1.2em;
+  .margin {
+    margin-right: 1.2em;
     margin-left: 1.2em;
   }
-  
-  .topIMG{
+
+  .topIMG {
     width: 100%;
     height: auto;
   }
-  
+
+  /*---------- GRØN POST-IT BOKS ----------*/
   .post-it-green {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: var(--green);
     color: white;
     padding: 2.5em;
     padding-bottom: 1em;
-    transform: rotate(3deg);
-    width: fit-content;
+    position: relative;
     margin: 2.5em;
+    box-shadow: 0em 0.4em var(--shadow);
+    transform: rotate(2deg);
   }
 
   .tape {
     position: absolute;
-    width: 50px;
+    width: 3em;
     height: auto;
   }
 
   .tape1 {
-    top: -1em;
+    top: -0.9em;
     left: -1em;
     transform: rotate(100deg);
   }
 
   .tape2 {
-    top: -0.8em;
+    top: -1em;
     right: -1em;
-    transform: rotate(0deg);
+    transform: rotate(-10deg);
   }
 
-  ol{
+  .post-it-green ol {
+    margin-left: 1.2em;
+  }
+
+  .post-it-green ol li {
     font-family: Amiko-Regular;
     font-size: 0.9em;
     line-height: 1.5em;
-    font-style: normal;
-    padding-left: 1.2em;
-  }
-
-  li{
     margin-bottom: 1em;
   }
 
-  .pink-background img{
+  /*---------- PINK BAGGRUND FORLØBETS INDHOLD ----------*/
+
+  .pink-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    row-gap: 2em;
+    padding-top: 8em;
+  }
+  
+  .pink-container img.pink-img {
+    position: absolute;
     width: 100%;
     height: auto;
-    position: absolute;
+    z-index: -1;
   }
 
-  .inside{
-    position: relative;
+  .pink-container h2 {
     color: white;
-    top: 8em;
     text-align: center;
   }
 
-  .white-box1{
-    position: relative;
+  .white-box {
     background-color: white;
-    color: black;
-     padding-top: 1.5em;
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-bottom: 0.2em;
-    transform: rotate(3deg);
-    width: fit-content;
-    top: 10em;
-    left: 7em;
     text-align: center;
-    box-shadow: 0em 0.2em var(--shadow);
+    padding: 2em 3.1em 0.5em 3.1em;
+    width: fit-content;
+    transform: rotate(2deg);
+    box-shadow: 0em 0.3em var(--shadow);
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
   }
 
-   .tape3 {
-    top: -4.7em;
-    left: -4.2em;
+  .white-box3 {
+    padding: 1.6em 2em 0.5em 1.6em;
+  }
+
+  .tape3 {
+    top: -0.8em;
+    left: -1em;
     transform: rotate(100deg);
-    scale: 0.3;
   }
 
   .tape4 {
-    top: -4.4em;
-    right: -4.4em;
-    transform: rotate(0deg);
-    scale: 0.3;
+    top: -1em;
+    right: -0.8em;
+    transform: rotate(-10deg);
   }
 
-  .white-box2 {
-    position: relative;
-    background-color: white;
-    color: black;
-     padding-top: 1.5em;
-    padding-right: 2.2em;
-    padding-left: 2.2em;
-    padding-bottom: 0.2em;
-    transform: rotate(-3deg);
-    width: fit-content;
-    top: 13em;
-    left: 7em;
-    text-align: center;
-    box-shadow: 0em 0.2em var(--shadow);
-  }
-
-   .tape5 {
-    top: 1.3em;
-    left: -4.2em;
+  .tape5 {
+    top: 5em;
+    left: -1em;
     transform: rotate(0deg);
-    scale: 0.3;
   }
 
   .tape6 {
-    top: -4.2em;
-    right: -4.3em;
-    transform: rotate(0deg);
-    scale: 0.3;
+    top: -1em;
+    right: -0.8em;
+    transform: rotate(-10deg);
   }
 
-  .white-box3{
-    position: relative;
-    background-color: white;
-    color: black;
-    padding-top: 1.5em;
-    padding-right: 1.2em;
-    padding-left: 1.2em;
-    padding-bottom: 0.2em;
-    transform: rotate(3deg);
-    width: fit-content;
-    top: 16.5em;
-    left: 7em;
-    text-align: center;
-    box-shadow: 0em 0.2em var(--shadow);
-  }
-
-   .tape7 {
-    top: -5em;
-    left: -4.7em;
+  .tape7 {
+    top: -0.8em;
+    left: -1em;
     transform: rotate(100deg);
-    scale: 0.3;
   }
 
   .tape8 {
-    top: -4.8em;
-    right: -4.8em;
-    transform: rotate(0deg);
-    scale: 0.3;
+    top: -1em;
+    right: -0.8em;
+    transform: rotate(-10deg);
   }
 
-  .white-box4{
-    position: relative;
-    background-color: white;
-    color: black;
-    padding-top: 1.5em;
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-bottom: 0.2em;
-    transform: rotate(-3deg);
-    width: fit-content;
-    top: 19em;
-    left: 7em;
-    text-align: center;
-    box-shadow: 0em 0.2em var(--shadow);
-  }
-
-   .tape9 {
-    top: -4.5em;
-    left: -4.2em;
+  .tape9 {
+    top: -1em;
+    right: 10em;
     transform: rotate(100deg);
-    scale: 0.3;
   }
 
   .tape10 {
-    top: 1em;
-    right: -4.2em;
+    top: 5.5em;
+    left: 9.5em;
     transform: rotate(100deg);
-    scale: 0.3;
   }
 
+  /*---------- GRØN BOKS M. BILLEDE ----------*/
 
-  .container{
+  .container {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .green-box{
-    background-color: var(--green);
-    color: white;
-     box-sizing: border-box;
-    width: 100vw;
+
+  .green-box {
+    background: var(--green);
+    margin-right: 2em;
+    margin-left: 2em;
     padding: 2em;
-    margin-right: 2.5em;
-    margin-left: 2.5em;
-    align-content: center;
+    color: white;
   }
 
-  .green-box p{
-    margin-bottom: 0;
-    font-family: Amiko-Bold;
-  }
-
-  .green-box li{
-    margin-left: 0.5em;
-    margin-bottom: 0.2em;
-  }
-
-  .green-box ol{
-    margin-bottom: 1em;
-  }
-
-   .green-box ul li{
-    margin-left: 1em;
-  }
-
-  .studioIMG{
-    width: 100vw;
-    height: auto;
-     margin-right: 2.5em;
-    margin-left: 2.5em;
-    scale: 0.8;
-    margin-top: -2.5em;
-  }
-
-</style>
+  <style/>
