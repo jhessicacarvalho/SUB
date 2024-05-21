@@ -20,96 +20,155 @@ import "../styles/general.css";
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
     loading="lazy"></iframe>
 
+  <div class="button-container">
+    <button class="button" id="button">Se deltagerne</button>
+  </div>
   <section class="grid1">
     <div class="image_wrapper">
-      <img src="public/deltager/delt_1.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_1.webp" alt="" />
       <div class="content fade">
         <h2>lili</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_2.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_2.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_3.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_3.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_4.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_4.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_5.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_5.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_6.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_6.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_7.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_7.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_8.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_8.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_9.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_9.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_10.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_10.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_11.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_11.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
     <div class="image_wrapper">
-      <img src="public/deltager/delt_4.webp" alt="" />
+      <img class="hidden" src="public/deltager/delt_4.webp" alt="" />
       <div class="content fade">
         <h2>Anden person</h2>
         <a href=""><img src="public/svger/instagram.svg" alt="" /></a>
       </div>
     </div>
   </section>
-  <img src="public/paper-texture_pink_01.gif" alt="" />
+  <img style="width: 100%;" src="public/paper-texture_pink_01.gif" alt="" />
+
+  <div id="pink_baggrund">
+    <h1>Deltagerne 2023</h1>
+    <figure>
+      <img src="public/mentor/karen.webp" alt="my_photo" />
+      <figcaption>2024</figcaption>
+    </figure>
+    <iframe
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/artist/0P0xnSm6cTBPpAQPY78oHN?utm_source=generator"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+  </div>
 </MainLayout>
 
 <style>
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 600px) {
+    .grid1 {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt */
+    /* Får containeren til at fylde hele højden af viewporten */
+  }
+
+  .button {
+    border: solid;
+    border-width: medium;
+    border-color: #f499b8;
+    border-radius: 10px;
+    color: #f499b8;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  #pink_baggrund {
+    background-color: #f499b8;
+    margin: 0%;
+    position: relative;
+    top: -10px;
+  }
+
   figure {
     width: 336px;
     height: 403px;
@@ -118,6 +177,13 @@ import "../styles/general.css";
     padding: 19px 19px 110px 19px;
     box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.42);
     rotate: 10deg;
+
+    /* Tilføj disse regler for at centrere figuren */
+    margin: 0 auto; /* Centrer vandret */
+    display: flex; /* Brug flexbox */
+    flex-direction: column; /* Stak elementerne lodret */
+    justify-content: center; /* Centrer indholdet lodret */
+    align-items: center; /* Centrer indholdet vandret */
   }
   figure img {
     width: 100%;
@@ -146,11 +212,13 @@ import "../styles/general.css";
   }
 
   /* galleri*/
-  .grid1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 
+  .grid1 img {
+    display: none;
+  }
+  /* .hidden {
+    display: none;
+  } */
   .image_wrapper {
     position: relative;
     overflow: hidden;
@@ -188,3 +256,18 @@ import "../styles/general.css";
     opacity: 1;
   }
 </style>
+
+<script>
+  function toggleImages() {
+    var images = document.querySelectorAll(".grid1 img");
+    images.forEach(function (image) {
+      if ((image as HTMLElement).style.display === "none") {
+        (image as HTMLElement).style.display = "block";
+      } else {
+        (image as HTMLElement).style.display = "none";
+      }
+    });
+  }
+
+  document.getElementById("button").addEventListener("click", toggleImages);
+</script>
