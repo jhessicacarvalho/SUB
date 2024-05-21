@@ -2,8 +2,84 @@
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
 import Mentor from "../components/Mentor.astro";
+import Samarbejds from "../components/Samarbejds.astro";
 ---
 
 <MainLayout>
+  <div class="container">
+    <div class="box1">
+      <h1>Mød os</h1>
+      <br />
+      <p>
+        SuburbanGirls blev oprettet i 2019 af Karen Mukupa, Jesper Livid og
+        Marianne Fruergaard som et talentudviklingsprojekt under navnet Urban
+        Grrls. I 2024 skiftede projektet navn til SuburbanGirls for at afspejle
+        det voksende netværk og fællesskab. <p>
+          <br />
+          SuburbanGirls blev etableret som et samarbejde mellem flere kommuner uden
+          for København, for at sætte fokus på talentfulde unge kvinder i de urbane
+          områder.
+        </p>
+      </p>
+    </div>
+    <div class="box2">
+      <h2>Mission</h2>
+      <p>
+        Vores mission at skabe et stærkt netværk for unge kvinder i
+        musikbranchen. Vi ønsker at bryde med gamle normer og opmuntre kvinder
+        til at være sig selv og stikke ud.
+      </p>
+      <br />
+      <h2>Vision</h2>
+      <p>
+        Vores vision er at få flere kvinder ind i musikbranchen og skabe en
+        rigere og mere mangfoldig musikscene i Danmark.
+      </p>
+    </div>
+  </div>
   <Mentor />
+  <div class="knap">
+    <p>TV2 KOSMOPOL FULGTE I 2022 SUBURBANGIRLS</p>
+  </div>
+  <Samarbejds />
 </MainLayout>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box1 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  .box2 {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 40px;
+  }
+
+  @media (min-width: 768px) {
+    .box1,
+    .box2 {
+      width: 48%;
+    }
+  }
+
+  h1 {
+    font-family: mostWasted, serif;
+    font-size: 3em;
+  }
+  h2 {
+    font-family: Amiko-Bold;
+    font-size: 1.5rem;
+  }
+  p {
+    font-family: Amiko-Regular;
+  }
+</style>

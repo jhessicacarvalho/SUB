@@ -4,5 +4,54 @@ import "../styles/general.css";
 ---
 
 <MainLayout>
-  <p>bleh</p>
+  <img src="/public/ansog_billede.jpg" alt="To piger billede">
+  <h1>Ansøgning</h1>
+  <p><strong>EKSKLUSIVT TALENTFORLØB</strong></p>
+  <p>SUBURBANGIRLS for kvinder og kønsminoriteter mellem 15-25 år, med interesse for hiphopm RnB og beslægtede genre. I forløbet får du værktøjer til at forbedre dine skills, møde førende sangskrivere, producere og rådgivere i musikbranchen og får netværk for livet!</p>
+  <img class="ansog_billede2" src="/forside2.jpg" alt="billede af sub" />
+  <div class="ansog_tekst_box1">
+  <div class="ansog_tekst_box2">
+    <p>DEADLINE D. 30.11.24</p>
+    <p>Kickstart din karriere!</p>
+      <button class="button_ansog2">Ansøg nu</button>
+  </div>
+
+  <div class="logo_container2">
+  <img class="logo2" src="/logo.svg" alt="logo" /></div>
+</div>
 </MainLayout>
+<style>
+  .ansog_billede2{
+    transform: scaleX(-1);
+  }
+  .ansog_tekst_box1{
+display: flex;
+flex-direction: row;
+  }
+  .ansog_tekst_box2{
+
+  }
+
+  .button_ansog2 {
+    background-color:transparent; /* Ingen fyld */
+    border: 2px solid #000; /* Sort kant */
+    color: #000; /* Sort tekst */
+    padding: 10px 20px; /* Indvendig margen for at gøre knappen større */
+    font-size: 16px; /* Tekststørrelse */
+    cursor: pointer; /* Ændrer cursoren til en hånd */
+    border-radius: 4px; /* Lidt afrundede hjørner */
+    transition: background-color 0.3s, color 0.3s; /* Glat overgang */
+    border: 1px #000; /* Stroke */
+}
+
+.button_ansog2:hover {
+    background-color: #000; /* Sort baggrund ved hover */
+    color: #fff; /* Hvid tekst ved hover */
+}
+
+.logo_container2{
+display: flex;
+justify-content: left;
+margin-left: 1vw;
+}
+</style>
