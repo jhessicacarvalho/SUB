@@ -43,6 +43,15 @@ body {
 
   p {
     font-family: Amiko-Regular;
-    font-size: 1.5em;
+    font-size: 1.1em; /*mobile*/
+    line-height: 1.7;
   }
+}
+
+.custom-text br {
+  line-height: 10; /* Tilføjer større mellemrum specifikt til linjeskift */
+}
+
+.custom-text {
+  line-height: 10; /* Juster dette tal for at få større eller mindre mellemrum */
 }

@@ -4,11 +4,32 @@ import "../styles/general.css";
 ---
 
 <MainLayout>
-  <img src="/public/ansog_billede.jpg" alt="To piger billede">
-  <h1>Ansøgning</h1>
-  <p><strong>EKSKLUSIVT TALENTFORLØB</strong></p>
-  <p>SUBURBANGIRLS for kvinder og kønsminoriteter mellem 15-25 år, med interesse for hiphopm RnB og beslægtede genre. I forløbet får du værktøjer til at forbedre dine skills, møde førende sangskrivere, producere og rådgivere i musikbranchen og får netværk for livet!</p>
+  <img class="ansog_billede" src="/ansog_billede.jpg" alt="To kvinder" />
+  <h2>Vil du være med i SUBURBANGIRLS 2024?</h2>
+<div class="flex_forside">
+<div>
+<p><strong>SÅDAN SØGER DU</strong></p>
+<p>For at ansøge om at være en del af det nye SUBURBANGIRLS hold skal du udfylde det vedhæftede ansøgningsskema, som du finder længere nede ved “Ansøg nu”, hvor du hvor du fortæller lidt om dig selv og om dit liv med musik.</p>
+<p>Når du har sendt din ansøgning vil du modtage en ‘Tak for din ansøgning’ mail retur. Får du ikke den, så er det ikke sikkert vi har modtaget din ansøgning.</p>
+</div>
+<div class="bioboks">
+<p><strong>Du skal være:</strong></p>
+<ul>
+    <li>Kvinde eller kønsminoritet</li>
+    <li>15-25 år</li>
+    <li>Talentfuld</li>
+</ul>
+<p><strong>Derudover skal du enten:</strong></p>
+<ul>
+    <li>Rappe og/eller synge</li>
+    <li>Komponere (skrive dine egne tekster og melodier)</li>
+    <li>Lave beats og/eller producere</li>
+</ul>
+</div>
+</div>
+
   <img class="ansog_billede2" src="/forside2.jpg" alt="billede af sub" />
+  
   <div class="ansog_tekst_box1">
   <div class="ansog_tekst_box2">
     <p>DEADLINE D. 30.11.24</p>
@@ -21,8 +42,19 @@ import "../styles/general.css";
 </div>
 </MainLayout>
 <style>
+  .ansog_billede{
+    width: 100%;
+  height: auto;
+  }
+
+  .flex_forside{
+    display: flex;
+    flex-direction: row;
+  }
   .ansog_billede2{
     transform: scaleX(-1);
+    width: 100%;
+  height: auto;
   }
   .ansog_tekst_box1{
 display: flex;
@@ -54,4 +86,15 @@ display: flex;
 justify-content: left;
 margin-left: 1vw;
 }
+
+.bioboks {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 32rem;
+    background:var(--green);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
 </style>

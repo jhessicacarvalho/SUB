@@ -20,32 +20,35 @@ import Samarbejds from "../components/Samarbejds.astro";
     <div class="logo_container">
     <img class="logo" src="/logo.svg" alt="logo" /></div>
     <p class="forside_p">SUBURBANGIRLS er et musikfællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere. SUBURBANGIRLS vil gerne ændre kønsbalancen i musikbranchen.</p>
-    <img src="/forside2.jpg" alt="billede af sub" />
+    <img class="forsidebillede2" src="/forside2.jpg" alt="billede af sub" />
 
     <video controls class="video">
         <source src="/promovideo.mp4" type="video/mp4">
     </video>
 
 
+<div class="lyserod_container">
+
+    <img class="forsidebillede3" src="/lyserødbag.jpg" alt="lyserød baggrund" />
 
 
-    <img src="/lyserødbag.jpg" alt="lyserød baggrund" />
     <div class="forside_box_container">
     <div class="hvid_box">
         <p>ANSØGNINGSFRIST<br>30. NOVEMBER 2023</p
         <button class="button_ansog">Ansøg nu</button>
 </div>
+
 <div class="gron_box">
     <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
     <button class="button_link">LINK</button>
 </div>
+
 </div>
+</div>
+<p class="lort">L</p>
 </MainLayout>
 
 <style>
-.fosidebillede{
-
-}
 .forsidebillede_container{
     display: flex;
     justify-content: center;
@@ -66,6 +69,18 @@ import Samarbejds from "../components/Samarbejds.astro";
     height: auto;
     display: block; */
 }
+.forsidebillede2 {
+    width: 100%;
+    height: auto;
+    display: block; */
+}
+.forsidebillede3 {
+    width: 100%;
+    height: auto;
+    display: block; */
+}
+
+
 
 /* Tekst overlay */
 .tekst-overlay {
@@ -77,7 +92,7 @@ import Samarbejds from "../components/Samarbejds.astro";
     color: rgb(255, 255, 255);
     padding: 20px;
     background: rgba(0, 0, 0, 0.5);
-    margin-right: -90vh;
+    /* margin-right: -90vh; */
 }
 
 
@@ -106,16 +121,29 @@ margin-bottom: 8vw;
 
 
 
-
-
+/***lyserød forside box */
+.lyserod_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.forside_box_container{
+display: flex;
+flex-direction: row;
+position: absolute;
+}
 .hvid_box {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    width: 32rem;
-    background: #fff;
+    display: flex;
+    /* position: absolute; */
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    width: auto;
+    background:white;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    /* padding-top: 4rem;
+    padding-bottom: 2rem; */
 }
 .button_ansog {
     background-color:transparent; /* Ingen fyld */
@@ -139,17 +167,17 @@ margin-bottom: 8vw;
 }
 
 .gron_box {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    width: 32rem;
-    background: #fff;
+    /* position: absolute; */
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    width: auto;
+    background:var(--green);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    /* padding-top: 4rem;
+    padding-bottom: 2rem; */
 }
-.forside_box_container{
-display: flex;
-flex-direction: row;
+.lort{
+    line-height: 100px;
+    font-size: 500px;
 }
-
 </style>
