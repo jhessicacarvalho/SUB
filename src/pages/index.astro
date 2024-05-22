@@ -6,21 +6,19 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 <MainLayout>
 <div class="forsidebillede_container">
-    <div class="billede-wrapper">
         <img src="/forsidebillede.png" alt="forside billede" class="forsidebillede">
         <div class="tekst-overlay">
          <p>KICKSTART DIN KARRIERE</p>
     <p>MED VORES TALENTFORLØB</p>
     <button>Ansøg nu</button>   
         </div>
-    </div>
 </div>
 
 
     <div class="logo_container">
-    <img class="logo" src="/logo.svg" alt="logo" /></div>
+    <img class="logo" src="/svger/logo.svg" alt="logo" /></div>
     <p class="forside_p">SUBURBANGIRLS er et musikfællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere. SUBURBANGIRLS vil gerne ændre kønsbalancen i musikbranchen.</p>
-    <img class="forsidebillede2" src="/forside2.jpg" alt="billede af sub" />
+    <img class="forsidebillede2" src="/ubg.webp" alt="billede af sub" />
 
     <video controls class="video">
         <source src="/promovideo.mp4" type="video/mp4">
@@ -29,23 +27,28 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 <div class="lyserod_container">
 
-    <img class="forsidebillede3" src="/lyserødbag.jpg" alt="lyserød baggrund" />
+    <img class="forsidebillede3" src="/paper-texture_pink_01.gif" alt="lyserød baggrund"/>
+    <img class="forsidebillede4" src="/paper-texture_pink_03.gif" alt="lyserød baggrund" />
 
 
-    <div class="forside_box_container">
-    <div class="hvid_box">
-        <p><strong>ANSØGNINGSFRIST</strong><br>30. NOVEMBER 2023</p
-        <button class="button_ansog">Ansøg nu</button>
-</div>
+     <div class="forside_box_container">
 
-<div class="gron_box">
-    <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
-    <button class="button_link">LINK</button>
-</div>
+             <div class="hvid_box">
+                <img class="tape tape1" src="../svger/tape.svg" alt="tape">
+                <img class="tape tape2" src="../svger/tape.svg" alt="tape">
+                <p><strong>ANSØGNINGSFRIST</strong><br>30. NOVEMBER 2023</p
+                    <button class="button_ansog">Ansøg nu</button>
+        </div>
 
+             <div class="gron_box">
+                <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
+                <button class="button_link">LINK</button>
+            </div>
+
+        </div> 
+        
 </div>
-</div>
-<p class="lort">L</p>
+<p class="lort">l</p>
 </MainLayout>
 
 <style>
@@ -58,12 +61,7 @@ import Samarbejds from "../components/Samarbejds.astro";
 }
 
 /* Billedet */
-.billede-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+
 .forsidebillede {
     width: 100%;
     height: auto;
@@ -77,7 +75,10 @@ import Samarbejds from "../components/Samarbejds.astro";
 .forsidebillede3 {
     width: 100%;
     height: auto;
-    display: block; */
+}
+.forsidebillede4 {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -119,13 +120,8 @@ margin-bottom: 8vw;
 }
 
 
-
-
 /***lyserød forside box */
 .lyserod_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     position: relative;
 }
@@ -135,16 +131,27 @@ flex-direction: row;
 position: absolute;
 }
 .hvid_box {
-    display: flex;
-    /* position: absolute; */
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: 10rem;
-    background:white;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    position: relative;
+    background-color: var(--green);
+    color: white;
+    padding: 2.5em;
+    padding-bottom: 1em;
+    transform: rotate(3deg);
+    width: fit-content;
+    margin: 2.5em;
 }
+
+.tape1 {
+    top: -1em;
+    left: -1em;
+    transform: rotate(100deg);
+  }
+
+  .tape2 {
+    top: -0.8em;
+    right: -1em;
+    transform: rotate(0deg);
+  }
 .button_ansog {
     background-color:transparent; /* Ingen fyld */
     border: 2px solid #000; /* Sort kant */
@@ -177,7 +184,6 @@ position: absolute;
     padding-bottom: 2rem; */
 }
 .lort{
-    line-height: 100px;
-    font-size: 500px;
+    font-size: 400px;
 }
 </style>
