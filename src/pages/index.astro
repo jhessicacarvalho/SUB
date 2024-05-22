@@ -38,22 +38,13 @@ import Samarbejds from "../components/Samarbejds.astro";
                 <button class="button_ansog">Ansøg nu</button>
     </div>
 
-         <div class="gron_box">
+         <div class="hvid_box">
+            <img class="tape tape1" src="../svger/tape.svg" alt="tape">
+            <img class="tape tape2" src="../svger/tape.svg" alt="tape">
             <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
             <button class="button_link">LINK</button>
         </div>
 
-      <div class="white-box white-box1">
-        <img class="tape tape3" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape4" src="../svger/tape.svg" alt="tape">
-        <p>KVINDE-<br>FÆLLESSKAB</p>
-      </div>
-
-      <div class="white-box white-box2">
-        <img class="tape tape5" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape6" src="../svger/tape.svg" alt="tape">
-        <p>WORKSHOP<br>& CAMPS</p>
-      </div>
 
     </div>
     <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
@@ -61,23 +52,7 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 
 
-     <div class="forside_box_container">
 
-             <div class="hvid_box">
-                <img class="tape tape1" src="../svger/tape.svg" alt="tape">
-                <img class="tape tape2" src="../svger/tape.svg" alt="tape">
-                <p><strong>ANSØGNINGSFRIST</strong><br>30. NOVEMBER 2023</p
-                    <button class="button_ansog">Ansøg nu</button>
-        </div>
-
-             <div class="gron_box">
-                <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
-                <button class="button_link">LINK</button>
-            </div>
-
-        </div> 
-        
-</div>
 <p class="lort">l</p>
 </MainLayout>
 
@@ -182,12 +157,13 @@ margin-bottom: 4vw;
 }
 
 /*LYSERRØD BOKS*/
-
+.pink-img {
+    width: 100%;
+    height: auto;
+  }
 .pink-container {
     display: grid;
     grid-template-columns: 1fr;
-    position: relative;
-    row-gap: 3em;
     background-color: var(--pink);
     margin-top: -1em;
   }
