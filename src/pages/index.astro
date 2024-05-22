@@ -28,41 +28,37 @@ import Samarbejds from "../components/Samarbejds.astro";
     </video>
 
 
-
     <img class="pink-img" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
     <div class="pink-container">
-        <div>
-        <h2>FORLØBETS INDHOLD</h2>
-      </div>
+   
+        <div class="hvid_box">
+            <img class="tape tape1" src="../svger/tape.svg" alt="tape">
+            <img class="tape tape2" src="../svger/tape.svg" alt="tape">
+            <p><strong>ANSØGNINGSFRIST</strong><br>30. NOVEMBER 2023</p
+                <button class="button_ansog">Ansøg nu</button>
+    </div>
+
+         <div class="gron_box">
+            <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
+            <button class="button_link">LINK</button>
+        </div>
+
       <div class="white-box white-box1">
         <img class="tape tape3" src="../svger/tape.svg" alt="tape">
         <img class="tape tape4" src="../svger/tape.svg" alt="tape">
         <p>KVINDE-<br>FÆLLESSKAB</p>
       </div>
+
       <div class="white-box white-box2">
         <img class="tape tape5" src="../svger/tape.svg" alt="tape">
         <img class="tape tape6" src="../svger/tape.svg" alt="tape">
         <p>WORKSHOP<br>& CAMPS</p>
       </div>
-      <div class="white-box white-box3">
-        <img class="tape tape7" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape8" src="../svger/tape.svg" alt="tape">
-        <p>INDSIGT I<br>MUSIKBRANCHEN</p>
-      </div>
-      <div class="white-box white-box4">
-        <img class="tape tape9" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape10" src="../svger/tape.svg" alt="tape">
-        <p>RÅD &<br>VEJLEDNING</p>
-      </div>
+
     </div>
     <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
   
 
-
-<div class="lyserod_container">
-
-    <img class="forsidebillede3" src="/paper-texture_pink_01.gif" alt="lyserød baggrund"/>
-    <img class="forsidebillede4" src="/paper-texture_pink_03.gif" alt="lyserød baggrund" />
 
 
      <div class="forside_box_container">
@@ -186,6 +182,20 @@ margin-bottom: 4vw;
 }
 
 /*LYSERRØD BOKS*/
+
+.pink-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    row-gap: 3em;
+    background-color: var(--pink);
+    margin-top: -1em;
+  }
+
+
+
+
+
 .forsidebillede3 {
     width: 100%;
     height: auto;
@@ -212,9 +222,7 @@ margin-bottom: 8vw;
 
 
 /***lyserød forside box */
-.lyserod_container{
-display: grid;
-}
+
 .forside_box_container{
 display: flex;
 flex-direction: row;
