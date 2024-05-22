@@ -7,17 +7,16 @@ import Samarbejds from "../components/Samarbejds.astro";
 <MainLayout>
 <div class="forsidebillede_container">
         <img src="/forside.jpg" alt="forside billede" class="forsidebillede">
-        <div class="forside_overskrift_container">
+        <!-- <div class="forside_overskrift_container"> -->
         <h1 class="forside_overskrift">SUBURBANGIRLS</h1>
         <h1 class="forside_overskrift_skygge">SUBURBANGIRLS</h1>
-    </div>
-        <!-- <div class="tekst-overlay">
-         <p>KICKSTART DIN KARRIERE</p>
-    <p>MED VORES TALENTFORLØB</p>
-    <button>Ansøg nu</button>   
-        </div> -->
+    <!-- </div> -->
+        <div class="tekst-overlay">
+         <h2>KICKSTART DIN KARRIERE</h2>
+    <p class="forside_pb">MED VORES TALENTFORLØB</p>
+    <button class="button">Ansøg nu</button>
+        </div>
 </div>
-
 
     <div class="logo_container">
     <img class="logo" src="/svger/logo.svg" alt="logo" /></div>
@@ -56,23 +55,36 @@ import Samarbejds from "../components/Samarbejds.astro";
 </MainLayout>
 
 <style>
-.forside_overskrift_container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    /* FORSIDE BILLEDE LAYOUT*/
+.forsidebillede_container{
+    display: grid;
     width: 100%;
+    height: 43vh; /* Full viewport height mobile */
+    overflow: hidden; /* Hide overflow */
 }
 
+/* Forside billedet */
+.forsidebillede {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale and crop */
+    object-position: 17% center;
+}
 /* Overskrifter */
+.forside_overskrift_container{
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .forside_overskrift, .forside_overskrift_skygge {
     font-size: 15vw;
-    margin: 0;
-    position: absolute;
-    top: 2vw; /* Adjust as needed */
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: -1vw;
 }
 .forside_overskrift{
     color: var(--pink);
@@ -80,28 +92,69 @@ import Samarbejds from "../components/Samarbejds.astro";
 }
 .forside_overskrift_skygge{
     color: white;
-}
-.forsidebillede_container{
-    display: flex;
-    width: 100%;
-    position: relative;
-    height: 43vh; /* Full viewport height mobile */
-    overflow: hidden; /* Hide overflow */
+    margin-left: 1vw;
+    margin-top: -1.2vw;
 }
 
-/* Billedet */
-
-.forsidebillede {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Scale and crop */
-    object-position: 35% center;
+/* Tekst overlay */
+.tekst-overlay {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    justify-self: self-start;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 28vw;
+    margin-left: 6vw;
 }
+.tekst-overlay h2{
+    font-size: 4vw;
+    margin-bottom: -1vw;
+    color: white;
+}
+
+.forside_pb{
+    margin-bottom: 1vw;
+}
+
+/********************************* */
+
+/*KNAP*/
+.button{
+    border: solid;
+    border-width: medium;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0 0 0 / 30%);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 1.5vw 3vw;
+    font-size: 16px;
+    cursor: pointer;
+    border-width: 0.8vw; /* Justér kantens tykkelse*/
+}
+
+/*****LOGO */
+.logo_container{
+display: flex;
+justify-content: center;
+margin-top: 1vw;
+margin-bottom: 4vw;
+}
+
+.logo{
+    scale: 0.9;
+}
+
+/*BILLEDER*/
 .forsidebillede2 {
+    object-fit: cover; /* Scale and crop */
+    object-position: 80% center;
     width: 100%;
-    height: auto;
-    display: block; */
+    height: 80vw;
+    margin-top: -5vw;
 }
+
+/*LYSERRØD BOKS*/
 .forsidebillede3 {
     width: 100%;
     height: auto;
@@ -111,29 +164,6 @@ import Samarbejds from "../components/Samarbejds.astro";
     height: auto;
 }
 
-
-
-/* Tekst overlay */
-.tekst-overlay {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Venstrejuster elementer */
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    /* margin-right: -90vh; */
-}
-
-
-
-
-.logo_container{
-display: flex;
-justify-content: center;
-margin-top: 1vw;
-}
 
 .forside_p{
 margin-left: 10vw;
@@ -152,8 +182,7 @@ margin-bottom: 8vw;
 
 /***lyserød forside box */
 .lyserod_container{
-    width: 100%;
-    position: relative;
+display: grid;
 }
 .forside_box_container{
 display: flex;
@@ -182,17 +211,8 @@ position: absolute;
     right: -1em;
     transform: rotate(0deg);
   }
-.button_ansog {
-    background-color:transparent; /* Ingen fyld */
-    border: 2px solid #000; /* Sort kant */
-    color: #000; /* Sort tekst */
-    padding: 10px 20px; /* Indvendig margen for at gøre knappen større */
-    font-size: 16px; /* Tekststørrelse */
-    cursor: pointer; /* Ændrer cursoren til en hånd */
-    border-radius: 4px; /* Lidt afrundede hjørner */
-    transition: background-color 0.3s, color 0.3s; /* Glat overgang */
-    border: 1px #000;
-}
+
+
 
 .button_ansog:hover {
     background-color: #000; /* Sort baggrund ved hover */
