@@ -236,7 +236,6 @@ import Button from "../components/Button.astro";
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 1.5em;
   }
 
   .white-box {
@@ -323,7 +322,8 @@ import Button from "../components/Button.astro";
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10em 0;
+    margin-top: 3em;
+    margin-bottom: 5em;
   }
 
   .green-box {
@@ -381,14 +381,13 @@ import Button from "../components/Button.astro";
       text-align: center;
       padding: 0.5em 1em 0.5em 1em;
       font-family: Amiko-Regular;
-      font-size: 1em;
+      font-size: 0.8em;
     }
 
     .info-container{
       background-color: white;
       width: fit-content;
       padding: 2em;
-      margin-top: -6em;
     }
 
 /*---------- GREEN POST-IT ----------*/
@@ -418,8 +417,8 @@ import Button from "../components/Button.astro";
   }
 
   .tape12 {
-    top: 19em;
-    right: -0.7em;
+    top: 17em;
+    right: -0.5em;
     transform: rotate(100deg);
   }
 
@@ -440,7 +439,7 @@ import Button from "../components/Button.astro";
     background-color: var(--pink);
     color: white;
     padding: 2em;
-    width: fit-content;
+    width: 280px;
     margin: 2em auto;
   }
 
@@ -448,9 +447,18 @@ import Button from "../components/Button.astro";
     margin-bottom: 1em;
    }
 
+   .info-container h2{
+    font-size: 1em;
+   }
+
+   .info-container p{
+    font-size: 0.8em;
+   }
+
   .info-container p:last-child{
     margin-top: 3em;
     font-style: italic;
+    font-size: 0.5em;
   }
 
 /*---------- CITATER BAGGRUND ----------*/
@@ -474,7 +482,8 @@ import Button from "../components/Button.astro";
   .pink-container2 .overskrift {
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-top:2em;
   }
 
   /*---------- POLAROID-BOKSE ----------*/
@@ -508,12 +517,14 @@ import Button from "../components/Button.astro";
   .polaroid-box h2{
     margin-top: 1em;
     white-space: nowrap;
+    font-size: 1em;
   }
 
   .polaroid-box img.mariya-img, img.mathilde-img, img.thannura-img {
   width: 100%;
   height: auto;
 }
+
 
   .polaroid-box p{
     margin-bottom: 0.5em;
