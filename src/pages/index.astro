@@ -6,12 +6,16 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 <MainLayout>
 <div class="forsidebillede_container">
-        <img src="/forsidebillede.png" alt="forside billede" class="forsidebillede">
-        <div class="tekst-overlay">
+        <img src="/forside.jpg" alt="forside billede" class="forsidebillede">
+        <div class="forside_overskrift_container">
+        <h1 class="forside_overskrift">SUBURBANGIRLS</h1>
+        <h1 class="forside_overskrift_skygge">SUBURBANGIRLS</h1>
+    </div>
+        <!-- <div class="tekst-overlay">
          <p>KICKSTART DIN KARRIERE</p>
     <p>MED VORES TALENTFORLØB</p>
     <button>Ansøg nu</button>   
-        </div>
+        </div> -->
 </div>
 
 
@@ -52,20 +56,46 @@ import Samarbejds from "../components/Samarbejds.astro";
 </MainLayout>
 
 <style>
-.forsidebillede_container{
+.forside_overskrift_container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+/* Overskrifter */
+.forside_overskrift, .forside_overskrift_skygge {
+    font-size: 15vw;
+    margin: 0;
+    position: absolute;
+    top: 2vw; /* Adjust as needed */
+}
+.forside_overskrift{
+    color: var(--pink);
+    z-index: 1;
+}
+.forside_overskrift_skygge{
+    color: white;
+}
+.forsidebillede_container{
+    display: flex;
+    width: 100%;
     position: relative;
+    height: 43vh; /* Full viewport height mobile */
+    overflow: hidden; /* Hide overflow */
 }
 
 /* Billedet */
 
 .forsidebillede {
     width: 100%;
-    height: auto;
-    display: block; */
+    height: 100%;
+    object-fit: cover; /* Scale and crop */
+    object-position: 35% center;
 }
 .forsidebillede2 {
     width: 100%;
