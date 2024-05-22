@@ -32,15 +32,15 @@ import Samarbejds from "../components/Samarbejds.astro";
     <div class="pink-container">
    
         <div class="hvid_box">
-            <img class="tape tape1" src="../svger/tape.svg" alt="tape">
-            <img class="tape tape2" src="../svger/tape.svg" alt="tape">
+            <img class="tape1" src="../svger/tape.svg" alt="tape">
+            <img class="tape2" src="../svger/tape.svg" alt="tape">
             <p><strong>ANSØGNINGSFRIST</strong><br>30. NOVEMBER 2023</p
                 <button class="button_ansog">Ansøg nu</button>
     </div>
 
-         <div class="hvid_box">
-            <img class="tape tape1" src="../svger/tape.svg" alt="tape">
-            <img class="tape tape2" src="../svger/tape.svg" alt="tape">
+         <div class="gron_box">
+            <img class="tape3" src="../svger/tape.svg" alt="tape">
+            <img class="tape4" src="../svger/tape.svg" alt="tape">
             <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
             <button class="button_link">LINK</button>
         </div>
@@ -163,10 +163,37 @@ margin-bottom: 4vw;
   }
 .pink-container {
     display: grid;
-    grid-template-columns: 1fr;
     background-color: var(--pink);
     margin-top: -1em;
   }
+
+  .hvid_box {
+    /* position: relative; */
+    background-color: white;
+    color:var(--green);
+    padding: 2.5em;
+    padding-bottom: 1em;
+    transform: rotate(3deg);
+    width: fit-content;
+    margin: 2.5em;
+}
+
+.gron_box {
+    /* position: relative; */
+    background-color:var(--green);
+    color:white;
+    padding: 2.5em;
+    padding-bottom: 1em;
+    transform: rotate(3deg);
+    width: fit-content;
+    margin: 2.5em;
+}
+
+
+
+
+
+
 
 
 
@@ -204,16 +231,7 @@ display: flex;
 flex-direction: row;
 position: absolute;
 }
-.hvid_box {
-    position: relative;
-    background-color: var(--green);
-    color: white;
-    padding: 2.5em;
-    padding-bottom: 1em;
-    transform: rotate(3deg);
-    width: fit-content;
-    margin: 2.5em;
-}
+
 
 .tape1 {
     top: -1em;
