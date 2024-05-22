@@ -4,9 +4,9 @@ import "../styles/general.css";
 ---
 
 <MainLayout>
-  <!-- <img src="https://placehold.co/1420x400/png" alt="" /> -->
+  <img class="forside_img" src="public/deltager/sub_convert.webp" alt="" />
   <h1>Deltagerne 2024</h1>
-  <section class="top_grid">
+  <section class="top_grid margin">
     <figure>
       <img src="public/mentor/karen.webp" alt="my_photo" />
       <figcaption>2024</figcaption>
@@ -35,7 +35,7 @@ import "../styles/general.css";
   <div class="button-container">
     <button class="button" id="button">Se deltagerne +</button>
   </div>
-  <section class="grid1">
+  <section class="grid1 forsvind">
     <div class="image_wrapper">
       <img class="hidden" src="public/deltager/delt_1.webp" alt="" />
       <div class="content fade">
@@ -159,6 +159,12 @@ import "../styles/general.css";
 </MainLayout>
 
 <style>
+  .margin {
+    margin: 2em;
+  }
+  .forside_img {
+    height: auto;
+  }
   .grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -274,6 +280,9 @@ import "../styles/general.css";
     object-fit: cover; /*gør at alle billeder fylder lige meget*/
     object-position: center;
   }
+  .forsvind {
+    display: none;
+  }
 
   .image_wrapper > .content {
     position: absolute;
@@ -297,16 +306,23 @@ import "../styles/general.css";
 </style>
 
 <script>
+  // function toggleImages() {
+  //   var images = document.querySelectorAll(".grid1 img");
+  //   images.forEach(function (image) {
+  //     if ((image as HTMLElement).style.display === "none") {
+  //       (image as HTMLElement).style.display = "block";
+  //     } else {
+  //       (image as HTMLElement).style.display = "none";
+  //     }
+  //   });
+  // }
+
+  // document.getElementById("button").addEventListener("click", toggleImages);
+
   function toggleImages() {
-    var images = document.querySelectorAll(".grid1 img");
-    images.forEach(function (image) {
-      if ((image as HTMLElement).style.display === "none") {
-        (image as HTMLElement).style.display = "block";
-      } else {
-        (image as HTMLElement).style.display = "none";
-      }
-    });
+    let imagecontainer = document.querySelector(".grid1");
+    imagecontainer.classList.toggle("forsvind");
   }
 
-  document.getElementById("button").addEventListener("click", toggleImages);
+  document.querySelector("#button").addEventListener("click", toggleImages);
 </script>
