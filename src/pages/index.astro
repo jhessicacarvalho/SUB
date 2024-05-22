@@ -6,88 +6,261 @@ import Samarbejds from "../components/Samarbejds.astro";
 
 <MainLayout>
 <div class="forsidebillede_container">
-    <div class="billede-wrapper">
-        <img src="/forsidebillede.png" alt="forside billede" class="forsidebillede">
+        <img src="/forside.jpg" alt="forside billede" class="forsidebillede">
+        <!-- <div class="forside_overskrift_container"> -->
+        <h1 class="forside_overskrift">SUBURBANGIRLS</h1>
+        <h1 class="forside_overskrift_skygge">SUBURBANGIRLS</h1>
+    <!-- </div> -->
         <div class="tekst-overlay">
-         <p>KICKSTART DIN KARRIERE</p>
-    <p>MED VORES TALENTFORLØB</p>
-    <button>Ansøg nu</button>   
+         <h2>KICKSTART DIN KARRIERE</h2>
+    <p class="forside_pb">MED VORES TALENTFORLØB</p>
+    <button class="button">Ansøg nu</button>
         </div>
-    </div>
 </div>
 
-
     <div class="logo_container">
-    <img class="logo" src="/logo.svg" alt="logo" /></div>
-    <p class="forside_p">SUBURBANGIRLS arbejder målrettet på at ændre kønsbalancen i musikbranchen. Vi tilbyder et trygt og støttende fællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere.</p>
-    <img src="/forside2.jpg" alt="billede af sub" />
+    <img class="logo" src="/svger/logo.svg" alt="logo" /></div>
+    <p class="forside_p">SUBURBANGIRLS er et musikfællesskab, hvor du kan udvikle dine færdigheder og få indsigt i musikbranchen gennem møder med erfarne sangskrivere, producere og kunstnere. Her får du professionel vejledning og karriererådgivning fra brancheeksperter, samt muligheden for at opbygge et stærkt netværk af ligesindede kunstnere. SUBURBANGIRLS vil gerne ændre kønsbalancen i musikbranchen.</p>
+    <img class="forsidebillede2" src="/ubg.webp" alt="billede af sub" />
 
     <video controls class="video">
         <source src="/promovideo.mp4" type="video/mp4">
     </video>
 
 
+    <img class="pink-img" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
+   
+   
+    <div class="pink-container">
+
+      
+        <div class="hvid_box">
+            <h2>ANSØGNINGSFRIST</h2>
+            <p>30. NOVEMBER 2023</p>
+                <button>class="button_ansog"Ansøg nu</button> 
+    </div>
+    <img class="tape1" src="../svger/tape.svg" alt="tape">
+    <img class="tape2" src="../svger/tape.svg" alt="tape">
 
 
-    <img src="/lyserødbag.jpg" alt="lyserød baggrund" />
-    <div class="forside_box_container">
-    <div class="hvid_box">
-        <p>ANSØGNINGSFRIST<br>30. NOVEMBER 2023</p
-        <button class="button_ansog">Ansøg nu</button>
-</div>
-<div class="gron_box">
-    <p>INFO-EVENT ONLINE<br>21. NOVEMBER KL. 19.00</p
-    <button class="button_link">LINK</button>
-</div>
-</div>
+
+   
+         <div class="gron_box">
+            <h2>INFO-EVENT ONLINE</h2>
+            <p>21. NOVEMBER KL. 19.00</p>
+            <button class="button_link">LINK</button>
+        </div>
+        <img class="tape3" src="../svger/tape.svg" alt="tape">
+        <img class="tape4" src="../svger/tape.svg" alt="tape">
+
+    </div>
+    <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
+  
+
+
+
+
+<p class="lort">l</p>
 </MainLayout>
 
 <style>
-.fosidebillede{
 
-}
+    /* FORSIDE BILLEDE LAYOUT*/
 .forsidebillede_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     width: 100%;
-    position: relative;
+    height: 43vh; /* Full viewport height mobile */
+    overflow: hidden; /* Hide overflow */
 }
 
-/* Billedet */
-.billede-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+/* Forside billedet */
 .forsidebillede {
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
-    height: auto;
-    display: block; */
+    height: 100%;
+    object-fit: cover; /* Scale and crop */
+    object-position: 17% center;
+}
+/* Overskrifter */
+.forside_overskrift_container{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.forside_overskrift, .forside_overskrift_skygge {
+    font-size: 15vw;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: -1vw;
+}
+.forside_overskrift{
+    color: var(--pink);
+    z-index: 1;
+}
+.forside_overskrift_skygge{
+    color: white;
+    margin-left: 1vw;
+    margin-top: -1.2vw;
 }
 
 /* Tekst overlay */
 .tekst-overlay {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Venstrejuster elementer */
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    justify-self: self-start;
+    align-self: center;
     color: rgb(255, 255, 255);
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    margin-right: -90vh;
+    text-align: left;
+    margin-top: 28vw;
+    margin-left: 6vw;
+}
+.tekst-overlay h2{
+    font-size: 4vw;
+    margin-bottom: -1vw;
+    color: white;
 }
 
+.forside_pb{
+    margin-bottom: 1vw;
+}
 
+/********************************* */
 
+/*KNAP*/
+.button{
+    border: solid;
+    border-width: medium;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0 0 0 / 30%);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 1.5vw 3vw;
+    font-size: 16px;
+    cursor: pointer;
+    border-width: 0.8vw; /* Justér kantens tykkelse*/
+}
 
+/*****LOGO */
 .logo_container{
 display: flex;
 justify-content: center;
 margin-top: 1vw;
+margin-bottom: 4vw;
 }
+
+.logo{
+    scale: 0.9;
+}
+
+/*BILLEDER*/
+.forsidebillede2 {
+    object-fit: cover; /* Scale and crop */
+    object-position: 80% center;
+    width: 100%;
+    height: 80vw;
+    margin-top: -5vw;
+}
+
+/*LYSERRØD BOKS*/
+.pink-img {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+.pink-container {
+    display: grid;
+    background-color: var(--pink);
+    margin-top: -4em;
+    margin-bottom: -4em;
+  }
+
+  .hvid_box {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    background-color: white;
+    color:var(--green);
+    padding: 2.5em;
+    padding-bottom: 1em;
+    transform: rotate(2deg);
+    /* width: fit-content; */
+    margin: 2.5em;
+    box-shadow: 0em 0.2em 0.4em var(--shadow);
+}
+
+.gron_box {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    background-color:var(--green);
+    color:white;
+    padding: 2.5em;
+    padding-bottom: 1em;
+    transform: rotate(-1.5deg);
+    /* width: fit-content; */
+    margin: 2.5em;
+    box-shadow: 0em 0.2em 0.4em var(--shadow);
+}
+
+.tape1 {
+    grid-column: 1;
+    grid-row: 1;
+    transform: rotate(100deg);
+    width: 50px;
+    height: 60px;
+    margin-left: 12%;
+  }
+
+  .tape2 {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    transform: rotate(0deg);
+    width: 20vw;
+    height: 25vw;
+    margin-left: 72%;
+    margin-top: 6%;
+  }
+.tape3 {
+    grid-column: 1;
+    grid-row: 2;
+    top: -1em;
+    left: -1em;
+    transform: rotate(100deg);
+  }
+
+  .tape4 {
+    grid-column: 1;
+    grid-row: 2;
+    top: -0.8em;
+    right: -1em;
+    transform: rotate(0deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+.forsidebillede3 {
+    width: 100%;
+    height: auto;
+}
+.forsidebillede4 {
+    width: 100%;
+    height: auto;
+}
+
 
 .forside_p{
 margin-left: 10vw;
@@ -104,30 +277,18 @@ margin-bottom: 8vw;
 }
 
 
+/***lyserød forside box */
 
-
-
-
-.hvid_box {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    width: 32rem;
-    background: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+.forside_box_container{
+display: flex;
+flex-direction: row;
+position: absolute;
 }
-.button_ansog {
-    background-color:transparent; /* Ingen fyld */
-    border: 2px solid #000; /* Sort kant */
-    color: #000; /* Sort tekst */
-    padding: 10px 20px; /* Indvendig margen for at gøre knappen større */
-    font-size: 16px; /* Tekststørrelse */
-    cursor: pointer; /* Ændrer cursoren til en hånd */
-    border-radius: 4px; /* Lidt afrundede hjørner */
-    transition: background-color 0.3s, color 0.3s; /* Glat overgang */
-    border: 1px #000;
-}
+
+
+
+
+
 
 .button_ansog:hover {
     background-color: #000; /* Sort baggrund ved hover */
@@ -139,17 +300,16 @@ margin-bottom: 8vw;
 }
 
 .gron_box {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    width: 32rem;
-    background: #fff;
+    /* position: absolute; */
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    width: auto;
+    background:var(--green);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    /* padding-top: 4rem;
+    padding-bottom: 2rem; */
 }
-.forside_box_container{
-display: flex;
-flex-direction: row;
+.lort{
+    font-size: 400px;
 }
-
 </style>

@@ -76,3 +76,11 @@ body {
     font-weight: normal;
   }
 }
+
+.custom-text br {
+  line-height: 10; /* Tilføjer større mellemrum specifikt til linjeskift */
+}
+
+.custom-text {
+  line-height: 10; /* Juster dette tal for at få større eller mindre mellemrum */
+}
