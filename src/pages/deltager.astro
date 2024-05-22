@@ -6,19 +6,31 @@ import "../styles/general.css";
 <MainLayout>
   <!-- <img src="https://placehold.co/1420x400/png" alt="" /> -->
   <h1>Deltagerne 2024</h1>
-  <figure>
-    <img src="public/mentor/karen.webp" alt="my_photo" />
-    <figcaption>2024</figcaption>
-  </figure>
-  <iframe
-    style="border-radius: 12px"
-    src="https://open.spotify.com/embed/artist/0P0xnSm6cTBPpAQPY78oHN?utm_source=generator"
-    width="100%"
-    height="352"
-    frameborder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"></iframe>
+  <section class="top_grid">
+    <figure>
+      <img src="public/mentor/karen.webp" alt="my_photo" />
+      <figcaption>2024</figcaption>
+      <img
+        class="tape tape-top-left"
+        src="public/deltager/lille_tape.webp"
+        alt=""
+      />
+      <img
+        class="tape tape-bottom-right"
+        src="public/deltager/lille_tape.webp"
+        alt=""
+      />
+    </figure>
+    <iframe
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/artist/0P0xnSm6cTBPpAQPY78oHN?utm_source=generator"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+  </section>
 
   <div class="button-container">
     <button class="button" id="button">Se deltagerne</button>
@@ -113,19 +125,21 @@ import "../styles/general.css";
 
   <div id="pink_baggrund">
     <h1>Deltagerne 2023</h1>
-    <figure>
-      <img src="public/mentor/karen.webp" alt="my_photo" />
-      <figcaption>2024</figcaption>
-    </figure>
-    <iframe
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/artist/0P0xnSm6cTBPpAQPY78oHN?utm_source=generator"
-      width="100%"
-      height="352"
-      frameborder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"></iframe>
+    <section class="top_grid">
+      <figure>
+        <img src="public/mentor/karen.webp" alt="my_photo" />
+        <figcaption>2024</figcaption>
+      </figure>
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/artist/0P0xnSm6cTBPpAQPY78oHN?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </section>
   </div>
 </MainLayout>
 
@@ -138,6 +152,18 @@ import "../styles/general.css";
   @media (min-width: 600px) {
     .grid1 {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .top_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 50px;
+    }
+    .top_grid figure {
+      order: 2; /* Set order for the figure */
+    }
+
+    .top_grid iframe {
+      order: 1; /* Set order for the iframe */
     }
   }
 
@@ -159,7 +185,8 @@ import "../styles/general.css";
     text-decoration: none;
     display: flex;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin-top: 50px; */
+    margin-bottom: 10px;
     cursor: pointer;
   }
   #pink_baggrund {
@@ -174,12 +201,14 @@ import "../styles/general.css";
     height: 403px;
     position: relative;
     background-color: #ffffff;
-    padding: 19px 19px 110px 19px;
+    padding: 19px 19px 55px 19px;
     box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.42);
     rotate: 10deg;
 
     /* Tilføj disse regler for at centrere figuren */
     margin: 0 auto; /* Centrer vandret */
+    margin-bottom: 60px;
+    margin-top: 30px;
     display: flex; /* Brug flexbox */
     flex-direction: column; /* Stak elementerne lodret */
     justify-content: center; /* Centrer indholdet lodret */
@@ -193,32 +222,29 @@ import "../styles/general.css";
     text-align: center;
     color: #2c2c2c;
   }
-  figure:before,
-  figure:after {
-    content: "";
+  figure .tape {
     position: absolute;
-    height: 50px;
-    width: 180px;
-    background-color: rgba(102, 102, 102, 0.6);
-    transform: rotate(-40deg);
-  }
-  figure:before {
-    top: 3px;
-    left: -55px;
-  }
-  figure:after {
-    bottom: 3px;
-    right: -60px;
+    width: 13%; /* Adjust size as needed */
+    height: 36%; /* Adjust size as needed */
   }
 
+  .tape-top-left {
+    top: -39px;
+    left: 5px;
+    transform: rotate(40deg);
+  }
+
+  .tape-bottom-right {
+    bottom: -52px;
+    right: -1px;
+    transform: rotate(40deg);
+  }
   /* galleri*/
 
   .grid1 img {
     display: none;
   }
-  /* .hidden {
-    display: none;
-  } */
+
   .image_wrapper {
     position: relative;
     overflow: hidden;
@@ -246,10 +272,6 @@ import "../styles/general.css";
   .image_wrapper > .content,
   .image_wrapper > img {
     transition: 200ms ease-in-out;
-  }
-
-  .image_wrapper > .content.fade {
-    opacity: 0;
   }
 
   .image_wrapper:hover > .content.fade {
