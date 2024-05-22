@@ -1,3 +1,4 @@
+
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
@@ -5,56 +6,73 @@ import Button from "../components/Button.astro";
 ---
 <MainLayout>
   <img class="topIMG" src="../forlob.webp" alt="To personer i et studio">
-  <div class="margin">
-    <h1>Vores forløb</h1>
-    <p>SUBURBANGIRLS er for dig der elsker hiphop, RnB og lignende genrer, dig der savner et sted til at realisere dine drømme og ideer og dig der ved du skal ud i verden.</p>
-  </div>
-  <div class="post-it-green">
-    <img class="tape tape1" src="../svger/tape.svg" alt="tape">
-    <img class="tape tape2" src="../svger/tape.svg" alt="tape">
-    <h2>HVORFOR?</h2>
-    <ol>
-      <li>Få viden og netværk inden for musikbranchen</li>
-      <li>Bliv støttet og anerkendt i din kreative rejse</li>
-      <li>Få udviklet dine musikalske evner</li>
-      <li>Vær med til at bryde kønsbalancen i musikbranchen</li>
-    </ol>
+  
+    <h1 class="margin">Vores forløb</h1>
+
+<!-- ------------ GRID1: OM FORLØBET + GREEN-POST-IT ------------ -->
+    <div class="grid_container">
+      <div>
+      <p class="margin">SUBURBANGIRLS er for dig der elsker hiphop, RnB og lignende genrer, dig der savner et sted til at realisere dine drømme og ideer og dig der ved du skal ud i verden.</p>
+      </div>
+
+      <div class="post-it-container">
+        <div class="post-it-green">
+          <h2>HVORFOR?</h2>
+          <ol>
+            <li>Få viden og netværk inden for musikbranchen</li>
+            <li>Bliv støttet og anerkendt i din kreative rejse</li>
+            <li>Få udviklet dine musikalske evner</li>
+            <li>Vær med til at bryde kønsbalancen i musikbranchen</li>
+          </ol>
+        </div>
+        <img class="tape tape1" src="../svger/tape.svg" alt="tape">
+        <img class="tape tape2" src="../svger/tape.svg" alt="tape">
+      </div>
+
+      <div class="margin">
+        <p>Det et eksklusivt og forpligtende talent- og karriereforløb for kvinder der ønsker at træde ind i musikbranchen. Du vil møde erfarne kunstnere, sangskrivere og producere, som du vil kunne spare med. Du vil derudover blive klogere på musikbranchens virke. Vores karriererådgivning guider dig til at skabe din egen succes i musikverdenen. </p>
+        <p>Du bliver en del af et trygt og styrkende fællesskab, hvor du får mulighed for at udvikle dine færdigheder. Det vigtigste kriterie for en plads på forløbet er dit talent, din motivation og dine ambitioner - erfaring er ikke et krav, men heller ingen hindring.</p>
+      </div>
   </div>
 
-  <div class="margin">
-    <p>Det et eksklusivt og forpligtende talent- og karriereforløb for kvinder der ønsker at træde ind i musikbranchen. Du vil møde erfarne kunstnere, sangskrivere og producere, som du vil kunne spare med. Du vil derudover blive klogere på musikbranchens virke. Vores karriererådgivning guider dig til at skabe din egen succes i musikverdenen. </p>
-    <p>Du bliver en del af et trygt og styrkende fællesskab, hvor du får mulighed for at udvikle dine færdigheder. Det vigtigste kriterie for en plads på forløbet er dit talent, din motivation og dine ambitioner - erfaring er ikke et krav, men heller ingen hindring.</p>
-  </div>
-
+<!-- ------------ GRID2: FORLØBETS INDHOLD + PINK BAGGRUND MED HVIDE BOKSE ------------ -->
   <img class="pink-img" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
   <div class="pink-container">
       <div>
       <h2>FORLØBETS INDHOLD</h2>
     </div>
-    <div class="white-box white-box1">
-      <img class="tape tape3" src="../svger/tape.svg" alt="tape">
-      <img class="tape tape4" src="../svger/tape.svg" alt="tape">
-      <p>KVINDE-<br>FÆLLESSKAB</p>
-    </div>
-    <div class="white-box white-box2">
-      <img class="tape tape5" src="../svger/tape.svg" alt="tape">
-      <img class="tape tape6" src="../svger/tape.svg" alt="tape">
-      <p>WORKSHOP<br>& CAMPS</p>
-    </div>
-    <div class="white-box white-box3">
-      <img class="tape tape7" src="../svger/tape.svg" alt="tape">
-      <img class="tape tape8" src="../svger/tape.svg" alt="tape">
-      <p>INDSIGT I<br>MUSIKBRANCHEN</p>
-    </div>
-    <div class="white-box white-box4">
-      <img class="tape tape9" src="../svger/tape.svg" alt="tape">
-      <img class="tape tape10" src="../svger/tape.svg" alt="tape">
-      <p>RÅD &<br>VEJLEDNING</p>
+
+    <div class="grid-container2" >
+      <div class="white-box white-box1">
+        <img class="tape tape3" src="../svger/tape.svg" alt="tape">
+        <img class="tape tape4" src="../svger/tape.svg" alt="tape">
+        <p>KVINDE-<br>FÆLLESSKAB</p>
+      </div>
+
+      <div class="white-box white-box2">
+        <img class="tape tape5" src="../svger/tape.svg" alt="tape">
+        <img class="tape tape6" src="../svger/tape.svg" alt="tape">
+        <p>WORKSHOP<br>& CAMPS</p>
+      </div>
+
+      <div class="white-box white-box3">
+        <img class="tape tape7" src="../svger/tape.svg" alt="tape">
+        <img class="tape tape8" src="../svger/tape.svg" alt="tape">
+        <p>INDSIGT I<br>MUSIKBRANCHEN</p>
+      </div>
+
+      <div class="white-box white-box4">
+        <img class="tape tape9" src="../svger/tape.svg" alt="tape">
+        <img class="tape tape10" src="../svger/tape.svg" alt="tape">
+        <p>RÅD &<br>VEJLEDNING</p>
+      </div>
     </div>
   </div>
-  <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
 
-  <div class="green-container">
+
+<!-- ------------ GRID3: GRØN BOKS + BILLEDE ------------ -->
+  <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
+  <div class="grid-container3">
     <div class="green-box">
       <h2>VIL DU VÆRE MED?</h2>
       <p>Du skal være:</p>
@@ -75,45 +93,48 @@ import Button from "../components/Button.astro";
     </div>
   </div>
 
+
+<!-- ------------ GRID4: INFO-CONTAINER + GREEN-POST-IT2 + PINK-POST-IT ------------ -->
 <div class="info-container" >
-  <h2>Indhold</h2>
-  <p>SUBURBANGIRLS består blandt andet af en kick-off-weekend, en producer-weekend, tre sangskrivningscamps, flere søndagssessions og onsdags-workshops, en studieindspilning og udgivelse af album samt besøg af og møder med musikbranchens virksomheder og musikbrancheorganisationer.</p>
+  <div class="grid-container4">
+    <div>
+      <h2>Indhold</h2>
+        <p>SUBURBANGIRLS består blandt andet af en kick-off-weekend, en producer-weekend, tre sangskrivningscamps, flere søndagssessions og onsdags-workshops, en studieindspilning og udgivelse af album samt besøg af og møder med musikbranchens virksomheder og musikbrancheorganisationer.</p>
+      <h2>Hvornår?</h2>
+        <p>Forløbet i SUBURBANGIRLS foregår i perioden januar – september 2024. De fleste aktiviteter foregår i perioden januar - maj 2024. Der er release og afslutning i august samt individuelle rådgivningssamtaler i september, som afrunder forløbet.</p>
+    </div>
+    <div class="post-it-green2">
+      <img class="tape tape11" src="../svger/tape.svg" alt="tape">
+      <img class="tape tape12" src="../svger/tape.svg" alt="tape">
+      <h2>Du skal være opmærksom på:</h2>
+      <ul>
+        <li>Vi udvælger 20 deltagere til at være en del af forløbet i 2024.</li>
+        <li>Det er gratis at deltage, der forventes din deltagelse og engagement i de fleste af aktiviteterne i forløbet, som vil foregå primært i København</li>
+      </ul>
+    </div>
 
-  <h2>Hvornår?</h2>
-  <p>Forløbet i SUBURBANGIRLS foregår i perioden januar – september 2024. De fleste aktiviteter foregår i perioden januar - maj 2024. Der er release og afslutning i august samt individuelle rådgivningssamtaler i september, som afrunder forløbet.</p>
+    <div class="info-pink1">
+      <h2>ANSØGNINGSFRIST</h2>
+      <p>30. NOVEMBER KL. 23:59</p>
+      <a href="../ansog" class="button">ANSØG NU</a>
+    </div>
 
-  <div class="post-it-green2">
-     <img class="tape tape11" src="../svger/tape.svg" alt="tape">
-    <img class="tape tape12" src="../svger/tape.svg" alt="tape">
-    <h2>Du skal være opmærksom på:</h2>
-    <ul>
-      <li>Vi udvælger 20 deltagere til at være en del af forløbet i 2024.</li>
-      <li>Det er gratis at deltage, der forventes din deltagelse og engagement i de fleste af aktiviteterne i forløbet, som vil foregå primært i København</li>
-    </ul>
+    <div class="info-pink2">
+      <h2>INFO-EVENT ONLINE</h2>
+      <p>21. NOVEMBER KL. 19:00</p>
+      <a href="https://www.facebook.com/events/1538341646905951/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A725401289629408%7D%7D]%22%7D" class="button">LINK</a>
+    </div>
   </div>
 
-  <div class="info-pink1">
-    <h2>ANSØGNINGSFRIST</h2>
-    <p>30. NOVEMBER KL. 23:59</p>
-    <a href="../ansog" class="button">ANSØG NU</a>
-  </div>
-
-  <div class="info-pink2">
-    <h2>INFO-EVENT ONLINE</h2>
-    <p>21. NOVEMBER KL. 19:00</p>
-    <a href="https://www.facebook.com/events/1538341646905951/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A725401289629408%7D%7D]%22%7D" class="button">LINK</a>
-  </div>
-
-  <p>Har du spørgsmål eller ønsker mere information. Skriv på mail: <a href="mailto:suburbangirlsdk@gmail.com" >suburbangirlsdk@gmail.com</a>
-</p>
+    <p class="kursiv" >Har du spørgsmål eller ønsker mere information. Skriv på mail: <a href="mailto:suburbangirlsdk@gmail.com" >suburbangirlsdk@gmail.com</a></p>
+  
 </div>
-
+<!-- ------------ CITATER: POLAROID BOKSE ------------ -->
   <img class="pink-img2" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
 <div class="pink-container2">
     <div>
       <h2 class="overskrift">TIDLIGERE DELTAGERS OPLEVELSER<br>MED SUBURBANGIRLS</span></h2>
     </div>
-
    <div>
       <div class="polaroid-box polaroid-box1">
         <img class="tape tape13" src="../svger/tape.svg" alt="tape">
@@ -126,9 +147,7 @@ import Button from "../components/Button.astro";
         <p>“SUBURBANGIRLS har givet mig en tro på min plads i musik-branchen og mine musikalske evner. Den tro har jeg haft brug for, for ikke at brænde ud før jeg overhovedet havde fået fod indenfor”</p>
       </div>
     </div>
-
     
-
     <div>
       <div class="polaroid-box polaroid-box2">
         <img class="tape tape15" src="../svger/tape.svg" alt="tape">
@@ -141,7 +160,6 @@ import Button from "../components/Button.astro";
         <p>“SUBURBANGIRLS har klædt mig på til at være den artist, rapper og sanger jeg drømmer om at være. Jeg er mere end klar nu til at Danmark skal høre min stemme”</p>
       </div>
     </div>
-
     <div>
       <div class="polaroid-box polaroid-box3">
         <img class="tape tape17" src="../svger/tape.svg" alt="tape">
@@ -150,73 +168,82 @@ import Button from "../components/Button.astro";
         <h2>THANNURA SIVABASKARAN</h2>
         <p>SUBURBANGIRLS 22/23</p>
       </div>
-
       <div class="citat-box citat-box3">
         <p>“Hvis du ønsker et godt netværk og fællesskab med andre artister, så ansøg SUBURBANGIRLS. Forløbet giver dig mange forskellige muligheder og åbner flere døre. Du får også et bedre indblik i branchen. Du kommer til at arbejde sammen med forskellige artister, producere og mentorer. Ansøg hvis du vil et skridt tættere på din drøm"</p>
       </div>
     </div>
-
   </div>
-
 
 </MainLayout>
 
 <style>
   .margin {
-    margin-right: 1.2em;
-    margin-left: 1.2em;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
   }
+
 
   .topIMG {
     width: 100%;
     height: auto;
   }
-
   /*---------- GRØN POST-IT BOKS ----------*/
+  .grid_container{
+    display: grid;
+    grid-column-template: 1fr;
+  }
+  
+.post-it-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
   .post-it-green {
-    display: flex;
-    flex-direction: column;
     background-color: var(--green);
     color: white;
-    padding: 2em;
-    padding-bottom: 1em;
-    position: relative;
-    margin: 4em;
-    box-shadow: 0em 0.4em 5px var(--shadow);
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: fit-content;
+    max-width: 400px;
+    box-shadow: 0em 0.4rem 5px var(--shadow);
     transform: rotate(5deg);
-  }
-
-  .tape {
-    position: absolute;
-    width: 3em;
-    height: auto;
-  }
-
-  .tape1 {
-    top: -0.9em;
-    left: -1em;
-    transform: rotate(100deg);
-  }
-
-  .tape2 {
-    top: -1em;
-    right: -1em;
-    transform: rotate(-10deg);
+    position:relative;
   }
 
   .post-it-green ol {
-    margin-left: 1.2em;
+    margin-left: 1.2rem;
   }
 
   .post-it-green ol li {
     font-family: Amiko-Regular;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
+  }
+  
+  .tape {
+    position: absolute;
+    width: 20%;
+    height: auto;
   }
 
-  /*---------- PINK BAGGRUND FORLØBETS INDHOLD ----------*/
+  .tape1 {
+    top: 0rem;
+    left: 2rem;
+    transform: rotate(100deg);
+  }
 
+  .tape2 {
+    top: 1rem;
+    right: 1.5rem;
+    transform: rotate(-10deg);
+  }
+ 
+  /*---------- PINK BAGGRUND FORLØBETS INDHOLD ----------*/
    .pink-img {
     width: 100%;
     height: auto;
@@ -226,170 +253,158 @@ import Button from "../components/Button.astro";
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
-    row-gap: 3em;
+    row-gap: 3rem;
     background-color: var(--pink);
-    margin-top: -1em;
+    margin-top: -1rem;
   }
   
   .pink-container h2 {
     color: white;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-container2{
+    display: grid;
+    grid-template-column: 1fr;
+    row-gap: 3rem;
   }
 
   .white-box {
     background-color: white;
     text-align: center;
-    padding: 2em 3em 0.5em 3.1em;
+    padding: 2rem 3rem 0.5rem 3.1rem;
     width: fit-content;
-    box-shadow: 0em 0.3em 5px var(--shadow);
+    box-shadow: 0rem 0.3rem 5px var(--shadow);
     position: relative;
     margin: 0 auto;
   }
-
   .white-box p{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
-
   .white-box2, .white-box4{
     transform: rotate(-2deg);
   }
-
   .white-box1, .white-box3{
     transform: rotate(2deg);
-        margin-top: -2em;
-
+        margin-top: -2rem;
   }
-
   .white-box3 {
-    padding: 1.6em 2em 0.5em 1.6em;
-    margin-top: 1em;
+    padding: 1.6rem 2rem 0.5rem 1.6rem;
+    margin-top: 1rem;
   }
-
 
   .tape3 {
-    top: -1em;
-    left: -1em;
+    top: -1rem;
+    left: -1rem;
     transform: rotate(100deg);
   }
-
   .tape4 {
-    top: -1em;
-    right: -0.8em;
+    top: -1rem;
+    right: -0.8rem;
     transform: rotate(-10deg);
   }
-
   .tape5 {
-    top: 6em;
-    left: -0.8em;
+    top: 6rem;
+    left: -0.8rem;
     transform: rotate(0deg);
   }
-
   .tape6 {
-    top: -1em;
-    right: -0.8em;
+    top: -1rem;
+    right: -0.8rem;
     transform: rotate(-10deg);
   }
-
   .tape7 {
-    top: -0.9em;
-    left: -0.6em;
+    top: -0.9rem;
+    left: -0.6rem;
     transform: rotate(100deg);
   }
-
   .tape8 {
-    top: -1em;
-    right: -0.8em;
+    top: -1rem;
+    right: -0.8rem;
     transform: rotate(-10deg);
   }
-
   .tape9 {
-    top: -1em;
-    right: 10.5em;
+    top: -1rem;
+    right: 10.5rem;
     transform: rotate(100deg);
   }
-
   .tape10 {
-    top: 5.5em;
-    left: 10em;
+    top: 5.5rem;
+    left: 10rem;
     transform: rotate(100deg);
   }
-
   /*---------- GRØN BOKS M. BILLEDE ----------*/
-
-  .green-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
-    margin-bottom: 5em;
+  .grid-container3 {
+    display: grid;
+    grid-template-column: 1fr;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
   }
 
   .green-box {
     background: var(--green);
-    padding: 2.5em;
+    padding: 2rem;
     color: white;
-    width: 80%;
+    width:100%;
   }
 
   .studioIMG-container {
-    width: 80%;
+    width: 100%;
   }
-
   .studioIMG {
     width: 100%;
     height: auto;
     margin: 0;
   }
-
   .green-box ol {
-    margin-left: 1.2em;
-    margin-bottom: 1.5em;
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
   }
-
    .green-box p {
-    margin-top: 1em;
-    margin-bottom: 0em;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
     font-family: Amiko-Bold;
   }
-
   .green-box ol li {
     font-family: Amiko-Regular;
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
-
    .green-box ul {
     margin-left: 1.2em;
     margin-bottom: 0em;
   }
   .green-box ul li {
     font-family: Amiko-Regular;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
   }
-
 /*---------- INFO-BOKS ----------*/
-
     .button{
       color: white;
       text-decoration: none;
       border: 2px solid white;
       border-radius: 8px;
       text-align: center;
-      padding: 0.5em 1em 0.5em 1em;
+      padding: 0.5rem 1rem 0.5em 1rem;
       font-family: Amiko-Regular;
-      font-size: 0.8em;
+      font-size: 0.8rem;
     }
-
     .info-container{
       background-color: white;
       width: fit-content;
-      padding: 2em;
+      padding: 2rem;
     }
 
+    .grid-container4{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 /*---------- GREEN POST-IT ----------*/
     .post-it-green2 {
     display: flex;
@@ -400,12 +415,12 @@ import Button from "../components/Button.astro";
     padding-bottom: 0em;
     position: relative;
     margin: auto;
-    margin-bottom: 5em;
+    margin-bottom: 3rem;
     box-shadow: 0em 0.4em 5px var(--shadow);
     transform: rotate(2deg);
     max-width: 18em;
   }
-
+  
   .post-it-green2 h2{
     margin-bottom: 0.5em;
   }
@@ -415,7 +430,6 @@ import Button from "../components/Button.astro";
     left: -1em;
     transform: rotate(100deg);
   }
-
   .tape12 {
     top: 17em;
     right: -0.5em;
@@ -425,49 +439,41 @@ import Button from "../components/Button.astro";
   .post-it-green2 ul {
     margin-left: 1.2em;
   }
-
   .post-it-green2 ul li {
     font-family: Amiko-Regular;
     font-size: 1em;
     line-height: 1.5em;
     margin-bottom: 1em;
   }
-
 /*---------- PINK INFO-BOKS ----------*/
-
   .info-pink1, .info-pink2{
     background-color: var(--pink);
     color: white;
     padding: 2em;
     width: 280px;
-    margin: 2em auto;
+    margin: 1em auto;
   }
-
    .info-pink1 p, .info-pink2 p {
     margin-bottom: 1em;
    }
-
    .info-container h2{
     font-size: 1em;
    }
-
    .info-container p{
     font-size: 0.8em;
    }
 
-  .info-container p:last-child{
+  .kursiv{
     margin-top: 3em;
     font-style: italic;
     font-size: 0.5em;
   }
-
 /*---------- CITATER BAGGRUND ----------*/
  .pink-img2 {
     width: 100%;
     height: auto;
     margin-top: -2em;
   }
-
   .pink-container2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -485,9 +491,7 @@ import Button from "../components/Button.astro";
     font-size: 1.2em;
     margin-top:2em;
   }
-
   /*---------- POLAROID-BOKSE ----------*/
-
   .polaroid-box {
     background-color: white;
     text-align: center;
@@ -499,11 +503,9 @@ import Button from "../components/Button.astro";
     z-index: 1;
     margin: 0 auto;
   }
-
   .polaroid-box1{
     transform: rotate(-5deg);
   }
-
   .polaroid-box2{
     transform: rotate(1deg);
     margin-top: 4em;
@@ -513,35 +515,29 @@ import Button from "../components/Button.astro";
     transform: rotate(5deg);
   margin-top: 4em;
   }
-
   .polaroid-box h2{
     margin-top: 1em;
     white-space: nowrap;
     font-size: 1em;
   }
-
   .polaroid-box img.mariya-img, img.mathilde-img, img.thannura-img {
   width: 100%;
   height: auto;
 }
 
-
   .polaroid-box p{
     margin-bottom: 0.5em;
   }
-
   .tape13, .tape15, .tape17 {
     top: -1em;
     left: -1em;
     transform: rotate(100deg);
   }
-
   .tape14, .tape16, .tape18 {
     top: -1em;
     right: -0.8em;
     transform: rotate(-10deg);
   }
-
    /*---------- CITAT-BOKSE ----------*/
   .citat-box {
     background-color: white;
@@ -551,9 +547,28 @@ import Button from "../components/Button.astro";
     position: relative;
     margin-top: -2em;
   }
-
   /*--------------- WEB-VERSION ---------------*/
   @media (min-width: 769px) {
-
+    .margin {
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
+   .container-grid{
+    display: grid;
+    grid-template-column: 1fr 1fr;
+   }
+   .post-it-green{
+    width: fit-content;
+    max-width: 600px;
+    padding: 4em;
+   }
+   
+   .post-it-green ol li{
+    font-size: 1.5em;
+   }
+    .post-it-green ol{
+    padding-left: 1em;
+   }
+  }
+ 
   <style/>
