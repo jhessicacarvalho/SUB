@@ -12,8 +12,8 @@ const data = await fetch(
 ).then((res) => res.json());
 ---
 
-<section class="baggrund">
-  <div class="mentorsection">
+<section>
+  <div>
     {
       data.map((mentor) => {
         return <SingleMentor data={mentor} />;
@@ -21,12 +21,3 @@ const data = await fetch(
     }
   </div>
 </section>
-
-<style>
-  .mentorsection {
-    background-image: url(/mentor/omosbg.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-</style>
