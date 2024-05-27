@@ -2,6 +2,7 @@
 import MainLayout from "../layout/MainLayout.astro";
 import "../styles/general.css";
 import Samarbejds from "../components/Samarbejds.astro";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout>
@@ -14,7 +15,7 @@ import Samarbejds from "../components/Samarbejds.astro";
         <div class="tekst-overlay">
          <h2>KICKSTART DIN KARRIERE</h2>
     <p class="forside_pb">MED VORES TALENTFORLØB</p>
-    <button class="button">Ansøg nu</button>
+    <Button>Ansøg nu</Button>
         </div>
 </div>
 
@@ -28,7 +29,7 @@ import Samarbejds from "../components/Samarbejds.astro";
     </video>
 
 
-    <img class="pink-img" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
+    <img class="pink-img1" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
    
    
     <div class="pink-container">
@@ -54,9 +55,9 @@ import Samarbejds from "../components/Samarbejds.astro";
         
 
     </div>
-    <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
+    <img class="pink-img2" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
   
-    <Samarbejds />
+    <!-- <Samarbejds /> -->
 
 
 
@@ -164,12 +165,18 @@ margin-bottom: 4vw;
 }
 
 /*LYSERRØD BOKS*/
-.pink-img {
+.pink-img1 {
     width: 100%;
     height: 40vw;
     object-fit: cover;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+  }
+
+  .pink-img2 {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
   }
 
 .pink-container {
@@ -304,5 +311,71 @@ position: absolute;
 }
 .lort{
     font-size: 400px;
+}
+
+
+/*DESKTOP VERSION*/
+@media (min-width: 769px){
+
+    .forsidebillede {
+    /* grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale and crop */
+    /* object-position: 17% center; */
+    /*REDIGER NÅR NYE BILLEDE KOMMER*/
+}
+
+    /* FORSIDE BILLEDE LAYOUT*/
+    .forsidebillede_container{
+    height: 90vh; /* Full viewport height mobile */
+}
+
+.forsidebillede2 {
+    height: 60vw;
+}
+
+.video {
+    position: absolute;
+    top: 240%;
+    left: 8%;
+    border: 5px solid  var(--pink); /* Tilføjer en sort kant på 5px */
+}
+
+.pink-img1 {
+    height: 25vw;
+    margin-top: 6em;
+  }
+.pink-img2 {
+    height: 25vw;
+  }
+
+  .hvid_box {
+    grid-column: 1;
+    grid-row: 1;
+}
+  .gron_box {
+    grid-column: 2;
+    grid-row: 1;
+}
+.tape1 {
+    margin-left: -12%;
+    margin-top: -13%;
+  }
+
+  .tape2 {
+    margin-left: 85%;
+    margin-top: -13%;
+  }
+.tape3 {
+    margin-left: -11%;
+    margin-top: -13%;
+  }
+
+  .tape4 {
+    margin-left: 85%;
+    margin-top: -13%;
+  }
 }
 </style>

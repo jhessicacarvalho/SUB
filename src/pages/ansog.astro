@@ -5,81 +5,44 @@ import "../styles/general.css";
 
 <MainLayout>
   <img class="ansog_billede" src="/ansog_billede.jpg" alt="To kvinder" />
+<div class="tekst_container">
   <h2>Vil du være med i SUBURBANGIRLS 2024?</h2>
-<div class="flex_forside">
-<div>
-<p><strong>SÅDAN SØGER DU</strong></p>
-<p>For at ansøge om at være en del af det nye SUBURBANGIRLS hold skal du udfylde det vedhæftede ansøgningsskema, som du finder længere nede ved “Ansøg nu”, hvor du hvor du fortæller lidt om dig selv og om dit liv med musik.</p>
+<p><strong>SÅDAN SØGER DU</strong><br>For at ansøge om at være en del af det nye SUBURBANGIRLS hold skal du udfylde det vedhæftede ansøgningsskema, som du finder længere nede ved “Ansøg nu”, hvor du hvor du fortæller lidt om dig selv og om dit liv med musik.</p>
 <p>Når du har sendt din ansøgning vil du modtage en ‘Tak for din ansøgning’ mail retur. Får du ikke den, så er det ikke sikkert vi har modtaget din ansøgning.</p>
-</div>
-<div class="bioboks">
-<p><strong>Du skal være:</strong></p>
-<ul>
-    <li>Kvinde eller kønsminoritet</li>
-    <li>15-25 år</li>
-    <li>Talentfuld</li>
-</ul>
-<p><strong>Derudover skal du enten:</strong></p>
-<ul>
-    <li>Rappe og/eller synge</li>
-    <li>Komponere (skrive dine egne tekster og melodier)</li>
-    <li>Lave beats og/eller producere</li>
-</ul>
-</div>
+<p>Har du spørgsmål eller ønsker mere information. Skriv på projektets mail: suburbangirlsdk@gmail.com</p>
 </div>
 
-  <img class="ansog_billede2" src="/forside2.jpg" alt="billede af sub" />
-  
+<img class="forsidebillede2" src="/ubg.webp" alt="billede af sub" />
   <div class="ansog_tekst_box1">
   <div class="ansog_tekst_box2">
     <p>DEADLINE D. 30.11.24</p>
     <p>Kickstart din karriere!</p>
       <button class="button_ansog2">Ansøg nu</button>
   </div>
-
   <div class="logo_container2">
   <img class="logo2" src="/logo.svg" alt="logo" /></div>
 </div>
 </MainLayout>
 <style>
-  .ansog_billede{
+    .ansog_billede{
     width: 100%;
   height: auto;
+  margin-bottom: 5%;
   }
-
-  .flex_forside{
-    display: flex;
-    flex-direction: row;
+  .tekst_container{
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  .ansog_billede2{
-    transform: scaleX(-1);
+.forsidebillede2 {
+    object-fit: cover; /* Scale and crop */
+    object-position: 80% center;
     width: 100%;
-  height: auto;
-  }
-  .ansog_tekst_box1{
-display: flex;
-flex-direction: row;
-  }
-  .ansog_tekst_box2{
-
-  }
-
-  .button_ansog2 {
-    background-color:transparent; /* Ingen fyld */
-    border: 2px solid #000; /* Sort kant */
-    color: #000; /* Sort tekst */
-    padding: 10px 20px; /* Indvendig margen for at gøre knappen større */
-    font-size: 16px; /* Tekststørrelse */
-    cursor: pointer; /* Ændrer cursoren til en hånd */
-    border-radius: 4px; /* Lidt afrundede hjørner */
-    transition: background-color 0.3s, color 0.3s; /* Glat overgang */
-    border: 1px #000; /* Stroke */
+    height: 70vw;
+    margin-top: -5vw;
+    transform: scaleX(-1); /* Flipper billedet vandret */
 }
 
-.button_ansog2:hover {
-    background-color: #000; /* Sort baggrund ved hover */
-    color: #fff; /* Hvid tekst ved hover */
-}
+
 
 .logo_container2{
 display: flex;
