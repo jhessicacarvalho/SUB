@@ -13,37 +13,21 @@
 </section>
 
 <style>
-  /*--------------- MOBIL-VERSION ---------------*/
+  .samarb {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Amiko-Regular", sans-serif;
+    color: black;
+    font-size: 17px;
+  }
+  .samarb_logo_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .samarb_logo_row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  img {
-    max-width: 7rem;
-    height: auto;
-  }
-  /*--------------- WEB-VERSION ---------------*/
-  @media (min-width: 769px) {
-    .samarb {
-      display: flex;
-      justify-content: center;
-      text-decoration: none;
-      font-family: "Amiko-Regular", sans-serif;
-      color: black;
-      font-size: 17px;
-    }
-    .samarb_logo_center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .samarb_logo_row {
-      display: flex;
-      gap: 1rem;
-    }
-    img {
-      max-width: 8rem;
-      height: auto;
-    }
+    display: flex;
+    flex-direction: row;
   }
 </style>
