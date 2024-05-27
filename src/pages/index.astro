@@ -35,28 +35,28 @@ import Samarbejds from "../components/Samarbejds.astro";
 
       
         <div class="hvid_box">
+            <img class="tape1" src="../svger/tape.svg" alt="tape">
+    <img class="tape2" src="../svger/tape.svg" alt="tape">
             <h2>ANSØGNINGSFRIST</h2>
             <p>30. NOVEMBER 2023</p>
                 <button>class="button_ansog"Ansøg nu</button> 
     </div>
-    <img class="tape1" src="../svger/tape.svg" alt="tape">
-    <img class="tape2" src="../svger/tape.svg" alt="tape">
-
-
+    
 
    
          <div class="gron_box">
+            <img class="tape3" src="../svger/tape.svg" alt="tape">
+        <img class="tape4" src="../svger/tape.svg" alt="tape">
             <h2>INFO-EVENT ONLINE</h2>
             <p>21. NOVEMBER KL. 19.00</p>
             <button class="button_link">LINK</button>
         </div>
-        <img class="tape3" src="../svger/tape.svg" alt="tape">
-        <img class="tape4" src="../svger/tape.svg" alt="tape">
+        
 
     </div>
     <img class="pink-img" src="../paper-texture_pink_03.gif" alt="pink papir der er revet over" >
   
-
+    <Samarbejds />
 
 
 
@@ -208,38 +208,40 @@ margin-bottom: 4vw;
 }
 
 .tape1 {
-    grid-column: 1;
-    grid-row: 1;
+    /* grid-column: 1;
+    grid-row: 1; */
     transform: rotate(100deg);
     width: 50px;
-    height: 60px;
-    margin-left: 12%;
+    height: 64px;
+    margin-left: -19%;
+    margin-top: -20%;
+    position: absolute;
   }
 
   .tape2 {
-    grid-column: 1;
-    grid-row: 1;
-    position: absolute;
     transform: rotate(0deg);
-    width: 20vw;
-    height: 25vw;
-    margin-left: 72%;
-    margin-top: 6%;
+    width: 50px;
+    height: 64px;
+    margin-left: 76%;
+    margin-top: -20%;
+    position: absolute;
   }
 .tape3 {
-    grid-column: 1;
-    grid-row: 2;
-    top: -1em;
-    left: -1em;
-    transform: rotate(100deg);
+    transform: rotate(102deg);
+    width: 50px;
+    height: 64px;
+    margin-left: -17%;
+    margin-top: -20%;
+    position: absolute;
   }
 
   .tape4 {
-    grid-column: 1;
-    grid-row: 2;
-    top: -0.8em;
-    right: -1em;
-    transform: rotate(0deg);
+    transform: rotate(-2deg);
+    width: 50px;
+    height: 64px;
+    margin-left: 76%;
+    margin-top: -20%;
+    position: absolute;
   }
 
 
@@ -289,15 +291,6 @@ position: absolute;
 
 
 
-
-.button_ansog:hover {
-    background-color: #000; /* Sort baggrund ved hover */
-    color: #fff; /* Hvid tekst ved hover */
-}
-
-.button_link{
-    SKAL LAVES TIL COMPONENT
-}
 
 .gron_box {
     /* position: absolute; */
