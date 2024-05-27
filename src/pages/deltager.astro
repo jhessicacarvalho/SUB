@@ -9,7 +9,7 @@ import "../styles/general.css";
     src="public/deltager/deltager_forside1.webp"
     alt=""
   />
-  <h1>Deltagerne 2023</h1>
+  <h1 style="margin-left: 1.4em">Deltagerne 2023</h1>
   <section class="top_grid margin">
     <figure>
       <img src="public/deltager/Fællesbillede_2.webp" alt="my_photo" />
@@ -183,7 +183,7 @@ import "../styles/general.css";
   <img style="width: 100%;" src="public/paper-texture_pink_01.gif" alt="" />
 
   <div id="pink_baggrund">
-    <h1>Deltagerne 2022</h1>
+    <h1 style="margin-left: 1.4em">Deltagerne 2022</h1>
     <section class="top_grid margin">
       <figure>
         <img src="public/deltager/fællesbillede3.webp" alt="my_photo" />
@@ -536,6 +536,7 @@ import "../styles/general.css";
 <style>
   .nederst_h1 {
     margin-top: -44px;
+    margin-left: 1.4em;
   }
   .margin {
     margin-top: 2em;
@@ -578,7 +579,7 @@ import "../styles/general.css";
   }
 
   #pink_baggrund {
-    background-color: #f499b8;
+    background-color: var(--pink);
     margin: 0%;
     position: relative;
     top: -35px;
@@ -699,11 +700,10 @@ import "../styles/general.css";
       margin-top: 50px;
     }
     .top_grid figure {
-      order: 2; /* Set order for the figure */
+      order: 2; /* Dette gør at "figure" bliver sat som nummer to når det kommer ind i et grid */
     }
-
     .top_grid iframe {
-      order: 1; /* Set order for the iframe */
+      order: 1; /*  Dette gør at "iframe" bliver sat som nummer to når det kommer ind i et grid  */
     }
     .margin {
       margin-top: 2em;
@@ -734,7 +734,7 @@ import "../styles/general.css";
     figcaption {
       font-size: 25px;
       text-align: center;
-      color: #2c2c2c;
+      color: black;
       font-family: Amiko-Regular;
     }
     figure .tape {
@@ -755,7 +755,7 @@ import "../styles/general.css";
       transform: rotate(40deg);
     }
     #pink_baggrund {
-      background-color: #f499b8;
+      background-color: var(--pink);
       margin: 0%;
       position: relative;
       top: -100px;
@@ -769,19 +769,12 @@ import "../styles/general.css";
     }
     .nederst_h1 {
       margin-top: -140px;
+      margin-left: margin-left: 1.4em;
     }
   }
 </style>
 
 <script>
-  // function toggleImages() {
-  //   let imagecontainer = document.querySelector(".grid1");
-  //   imagecontainer.classList.toggle("forsvind");
-  // }
-
-  // document.querySelector("#button").addEventListener("click", toggleImages);
-  // document.querySelector("#button2").addEventListener("click", toggleImages);
-
   function toggleImages() {
     let imageContainers = document.querySelectorAll(".grid1");
     imageContainers.forEach((container) => {
