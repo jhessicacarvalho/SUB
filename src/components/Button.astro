@@ -1,7 +1,9 @@
 ---
 import "../styles/general.css";
+const { text } = Astro.props;
 ---
-<button class="button">Ansøg nu</button>
+<button class="button">{text}</button>
+
 <style>
 .button{
     border: solid;
