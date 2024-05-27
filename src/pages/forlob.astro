@@ -125,53 +125,50 @@ import Button from "../components/Button.astro";
 
 
   <img class="pink-img2" src="../paper-texture_pink_01.gif" alt="pink papir der er revet over" >    
-<div class="pink-container2">
-    <div>
-      <h2 class="overskrift">TIDLIGERE DELTAGERS OPLEVELSER<br>MED SUBURBANGIRLS</span></h2>
+
+  <div class="pink-container2">
+      <div>
+          <h2 class="overskrift">TIDLIGERE DELTAGERS OPLEVELSER<br>MED SUBURBANGIRLS</span></h2>
+      </div>
+
+    <div class="grid-container5"> 
+        <div class="polaroid-box polaroid-box1">
+          <img class="tape tape13" src="../svger/tape.svg" alt="tape">
+          <img class="tape tape14" src="../svger/tape.svg" alt="tape">
+          <img src="../mariya.webp" alt="Mariya Apollonia" class="mariya-img">
+          <h2>MARIYA APOLLONIA</h2>
+          <p>SUBURBANGIRLS 22/23</p>
+        </div>
+        <div class="citat-box citat-box1">
+            <p>“SUBURBANGIRLS har givet mig en tro på min plads i musik-branchen og mine musikalske færdigheder. Den tro har jeg haft brug for, for ikke at brænde ud før jeg overhovedet havde fået fod indenfor”</p>
+        </div>
+
+
+        <div class="polaroid-box polaroid-box2">
+            <img class="tape tape15" src="../svger/tape.svg" alt="tape">
+            <img class="tape tape16" src="../svger/tape.svg" alt="tape">
+            <img src="../mathilde.webp" alt="Mathilde Caffey" class="mathilde-img">
+            <h2>MATHILDE CAFFEY</h2>
+            <p>SUBURBANGIRLS 22/23</p>
+        </div>
+        <div class="citat-box citat-box2">
+            <p>“SUBURBANGIRLS har klædt mig på til at være den artist, rapper og sanger jeg drømmer om at være. Jeg er mere end klar nu til at Danmark skal høre min stemme”</p>
+        </div>
+
+
+        <div class="polaroid-box polaroid-box3">
+              <img class="tape tape17" src="../svger/tape.svg" alt="tape">
+              <img class="tape tape18" src="../svger/tape.svg" alt="tape">
+              <img src="../thannura.webp" alt="Thannura Sivabaskaran" class="thannura-img">
+              <h2>THANNURA SIVABASKARAN</h2>
+              <p>SUBURBANGIRLS 22/23</p>
+          </div>
+          <div class="citat-box citat-box3">
+              <p>“Hvis du ønsker et godt netværk og fællesskab med andre artister, så ansøg SUBURBANGIRLS. Forløbet giver dig mange forskellige muligheder og åbner flere døre. Du får også et bedre indblik i branchen. Du kommer til at arbejde sammen med forskellige artister, producere og mentorer. Ansøg hvis du vil et skridt tættere på din drøm"</p>
+          </div>
+
     </div>
-
-   <div>
-      <div class="polaroid-box polaroid-box1">
-        <img class="tape tape13" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape14" src="../svger/tape.svg" alt="tape">
-        <img src="../mariya.webp" alt="Mariya Apollonia" class="mariya-img">
-        <h2>MARIYA APOLLONIA</h2>
-        <p>SUBURBANGIRLS 22/23</p>
-      </div>
-      <div class="citat-box citat-box1">
-        <p>“SUBURBANGIRLS har givet mig en tro på min plads i musik-branchen og mine musikalske færdigheder. Den tro har jeg haft brug for, for ikke at brænde ud før jeg overhovedet havde fået fod indenfor”</p>
-      </div>
-    </div>
-
-
-    <div>
-      <div class="polaroid-box polaroid-box2">
-        <img class="tape tape15" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape16" src="../svger/tape.svg" alt="tape">
-        <img src="../mathilde.webp" alt="Mathilde Caffey" class="mathilde-img">
-        <h2>MATHILDE CAFFEY</h2>
-        <p>SUBURBANGIRLS 22/23</p>
-      </div>
-      <div class="citat-box citat-box2">
-        <p>“SUBURBANGIRLS har klædt mig på til at være den artist, rapper og sanger jeg drømmer om at være. Jeg er mere end klar nu til at Danmark skal høre min stemme”</p>
-      </div>
-    </div>
-
-    <div>
-      <div class="polaroid-box polaroid-box3">
-        <img class="tape tape17" src="../svger/tape.svg" alt="tape">
-        <img class="tape tape18" src="../svger/tape.svg" alt="tape">
-        <img src="../thannura.webp" alt="Thannura Sivabaskaran" class="thannura-img">
-        <h2>THANNURA SIVABASKARAN</h2>
-        <p>SUBURBANGIRLS 22/23</p>
-      </div>
-
-      <div class="citat-box citat-box3">
-        <p>“Hvis du ønsker et godt netværk og fællesskab med andre artister, så ansøg SUBURBANGIRLS. Forløbet giver dig mange forskellige muligheder og åbner flere døre. Du får også et bedre indblik i branchen. Du kommer til at arbejde sammen med forskellige artister, producere og mentorer. Ansøg hvis du vil et skridt tættere på din drøm"</p>
-      </div>
-    </div>
-
-  </div>
+</div>
 
 
 </MainLayout>
@@ -214,7 +211,6 @@ import Button from "../components/Button.astro";
     position: absolute;
     width: 20%;
     height: auto;
-
   }
 
   .tape1 {
@@ -483,13 +479,20 @@ import Button from "../components/Button.astro";
     margin-top: -2rem;
   }
 
+  grid-container5{
+    display: grid;
+    grid-template-columns: 1fr;
+     
+  }
+
   .pink-container2 {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: -1rem; 
     position: relative;
     row-gap: 3rem;
     background-color: var(--pink);
-    margin-top: -1rem;  
+    
     padding-bottom: 5rem;
     margin-bottom: -5rem;
   }
@@ -578,35 +581,34 @@ import Button from "../components/Button.astro";
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0rem;
-
+  width:100%;
+  height:100%;
  }
 
   .post-it-green {
     padding: 4rem;
-    width: 1000px;
-  }
-
-  /* .tape {
-    position: absolute;
-    width: 20%;
-    height: auto;
-
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    max-width: 80%;
+    max-height: 100%;
+    align-self: end;
   }
 
   .tape1 {
-    top: -1.2rem;
-    left: -1rem;
+    top: -3.5rem;
+    left: -3rem;
     transform: rotate(100deg);
   }
 
   .tape2 {
-    top: -1.2rem;
-    right: -1rem;
+    top: -3rem;
+    right: -2rem;
     transform: rotate(-10deg);
-  } */
+  }
 
   .post-it-green ol {
-    margin-left: 2.6rem;
+    margin-left: 3rem;
   }
 
   .post-it-green ol li {
@@ -694,10 +696,9 @@ import Button from "../components/Button.astro";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 0 auto; 
-    width: 100%;
-    height: 100%;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    margin-top: 3rem;
+    width: 70%;
+    height: 50%;
   }
 
   .green-box{
@@ -705,6 +706,7 @@ import Button from "../components/Button.astro";
     height: 100%;
     padding: 4rem;
     align-content: center;
+    justify-self: end;
 }
 
    .studioIMG {
@@ -816,9 +818,73 @@ import Button from "../components/Button.astro";
     margin-top: -10rem;
    }
 
-   .overskrift{
-    font-size: 10rem;
-   }
+    .pink-container2 .overskrift {
+    font-size: 3rem;
+  }
+
+  .pink-container2{
+   
+  }
+
+  .grid-container5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .polaroid-box {
+    max-width: 100%;
+    width: 50%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+   .polaroid-box1{
+   
+  }
+
+  .polaroid-box2{
+    grid-column-start:2;
+    justify-content: start;
+  }
+
+   .polaroid-box3{
+    
+  }
+
+  .citat-box2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: end;
+  }
+
+  .polaroid-box h2{
+    margin-top: 1rem;
+    white-space: nowrap;
+    font-size: 3rem;
+  }
+
+  .polaroid-box img.mariya-img, img.mathilde-img, img.thannura-img {
+  width: 100%;
+  height: auto;
+}
+
+
+  .tape13, .tape15, .tape17 {
+    top: -2.5rem;
+    left: -2rem;
+  }
+
+  .tape14, .tape16, .tape18 {
+    top: -2.5rem;
+    right: -2rem;
+  }
+
+  .citat-box {
+    padding: 4rem 3rem 0.5rem 3.1rem;
+    width: 80%;
+    height: fit-content;
+    align-self: center;
+  } 
 }
 
 <style/>
